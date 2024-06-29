@@ -13,20 +13,10 @@ h3,
 p {
   margin: 0px;
 }
-
 ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
-}
-
-.textPhoto{
-  display: flex;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 .container{
   max-width: 1200px;
@@ -35,6 +25,47 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+}
+
+/* MAIN */
+.introducao{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid: 
+  "texto foto" 500px
+  "tag   tag " 140px 
+  / 400px  auto;
+  gap: 0px 32px ;
+}
+.introducao .infoText{
+  grid-area: texto;
+  align-self: center;
+}
+.introducao .photo_profile{
+  grid-area: foto;
+  max-height: 100%;
+  justify-self: center;
+}
+.introducao .infoTec{
+  grid-area: tag;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+.introducao .infoTec  h3::before{
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 10px;
+  top: 14px;
+}
+
+.introducao .infoTec .figma::before{
+  background: url(../img/progress01.svg) no-repeat center center;
 }
 .subtitulo{
   font-size: 8rem;

@@ -23,24 +23,23 @@
   font-weight: 600;
   line-height: 2.625rem;
 }
-
 .contato  a::before{
   display: block;
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   left: -24px;
   top: 14px;
 }
 .contato .email::before{
-  background: url(../img/cursos.svg) no-repeat center center;
+  background: url(../img/email.svg) no-repeat center center;
 }
 .contato .numb::before{
-  background: url(../img/cursos.svg) no-repeat center center;
+  background: url(../img//whatsapp.svg) no-repeat center center;
 }
 .contato .insta::before{
-  background: url(../img/cursos.svg) no-repeat center center;
+  background: url(/img/insta.svg) no-repeat center center;
 }
 footer .copyright{
  display: flex;
