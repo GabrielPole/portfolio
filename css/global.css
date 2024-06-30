@@ -36,8 +36,8 @@ ul {
   grid: 
   "texto foto" 500px
   "tag   tag " 140px 
-  / 400px  auto;
-  gap: 0px 32px ;
+  / 500px  auto;
+  gap: 0px 16px ;
 }
 .introducao .infoText{
   grid-area: texto;
@@ -47,25 +47,44 @@ ul {
   grid-area: foto;
   max-height: 100%;
   justify-self: center;
+  margin-left: 80px;
 }
 .introducao .infoTec{
   grid-area: tag;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.introducao .infoTec  h3{
+  font-size: 2em;
+  position: relative;
+  min-width: 190px;
 }
 .introducao .infoTec  h3::before{
   display: block;
   content: "";
-  width: 24px;
+  width: 189px;
   height: 24px;
   position: absolute;
-  left: 10px;
-  top: 14px;
+  left: 0px;
+  top: 58px;
 }
-
 .introducao .infoTec .figma::before{
   background: url(../img/progress01.svg) no-repeat center center;
+}
+.introducao .infoTec .htmlCss::before{
+  background: url(../img/progress02.svg) no-repeat center center;
+}
+.introducao .infoTec .javaScript::before{
+  background: url(../img/progress03.svg) no-repeat center center;
+}
+.introducao .infoTec .scrum::before{
+  background: url(../img/progress04.svg) no-repeat center center;
+}
+.introducao .infoTec .uxUi::before{
+  background: url(../img/progress02.svg) no-repeat center center;
 }
 .subtitulo{
   font-size: 8rem;
