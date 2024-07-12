@@ -12,23 +12,23 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="container header">
     <img src="./img/marca.svg" alt="G.Pole">
     <nav>
       <ul class="header_menu">
-        <li><a class="active" href="#home">Início</a></li>
-        <li><a href="#portifolio">Portfólio</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a class="btnsm active" href="#home">Início</a></li>
+        <li><a class="btnsm" href="#portifolio">Portfólio</a></li>
+        <li><a class="btnsm" href="#experiencia">Experiência</a></li>
+        <li><a  class="btnsm"href="#formacao">Formação</a></li>
+        <li><a  class="btnsm" href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="introducao">
+  <main class="container introducao">
     <div class="infoText">
       <h1>Hi, I'm  Pole!</h1>
-      <p>I'm a digital product designer focusing on crafting user experiences and design systems for software, web, and mobile products. I'm passionate about applying consumer psychology for an interaction science-backed approach.</p>
+      <p class="lg">I'm a digital product designer focusing on crafting user experiences and design systems for software, web, and mobile products. I'm passionate about applying consumer psychology for an interaction science-backed approach.</p>
     </div>
     <img class="photo_profile" src="./img/perfil.png"  alt="foto de gabriel pole">
     <div class="infoTec">
@@ -39,13 +39,13 @@
       <h3 class="uxUi">UX/UI</h3>
     </div>
   </main>
-  <section class="portfolio">
+  <section class="container portfolio">
     <h2>PORTFÓLIO</h2>
     <div class="boxFolder">
       <div class="headerTab">
           <h3 class="abaBranding">Branding</h3>
           <h3 class="abaWeb">Web</h3>
-          <h3 class="abaApps">Apps</h3>
+          <h3 class="abaApps active">Apps</h3>
       </div>
       <div class="folder">
         <div class="content">
@@ -82,14 +82,14 @@
   </section>
 
   <section class="container experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="subtitulo">Experiência</h2>
+    <h2>Experiência</h2>
     <div>
-      <p class="descricao experiencia_texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+      <p class="lg">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
       <div class="empresa">
-        <span class="empresa_ano">2023</span>
-        <h3 class="empresa_titulo">Codenapp</h3>
-        <span class="empresa_titulo">Desenvolvedor Júnior</span>
-        <p class="empresa_texto">Estabelecer e promover diretrizes de design de UX/UI, melhores práticas e padrões baseados no comportamento do usuário.</p>
+        <p class="empresa_ano">2023</p>
+        <h5 class="empresa_titulo">Codenapp</h5>
+        <h5 class="empresa_tech">Desenvolvedor Júnior</h5>
+        <p class="sm">Estabelecer e promover diretrizes de design de UX/UI, melhores práticas e padrões baseados no comportamento do usuário.</p>
         <ul class="empresa_habilidades">
           <li>CSS</li>
           <li>Ui Design</li>
@@ -97,83 +97,43 @@
           <li>JavaScript</li>
           <li>HTML</li>
         </ul>
-      </div>
-      <div class="empresa">
-        <span class="empresa_ano">2023</span>
-        <h3 class="empresa_titulo">Codenapp</h3>
-        <span class="empresa_titulo">Desenvolvedor Júnior</span>
-        <p class="empresa_texto">Estabelecer e promover diretrizes de design de UX/UI, melhores práticas e padrões baseados no comportamento do usuário.</p>
-        <ul class="empresa_habilidades">
-          <li>CSS</li>
-          <li>Ui Design</li>
-          <li>Ux Design</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-        </ul>
-      </div>
-      <div class="empresa">
-        <span class="empresa_ano">2023</span>
-        <h3 class="empresa_titulo">Codenapp</h3>
-        <span class="empresa_titulo">Desenvolvedor Júnior</span>
-        <p class="empresa_texto">Estabelecer e promover diretrizes de design de UX/UI, melhores práticas e padrões baseados no comportamento do usuário.</p>
-        <ul class="empresa_habilidades">
-          <li>CSS</li>
-          <li>Ui Design</li>
-          <li>Ux Design</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-        </ul>
-      </div>
-      <div class="empresa">
-        <span class="empresa_ano">2023</span>
-        <h3 class="empresa_titulo">Codenapp</h3>
-        <span class="empresa_titulo">Desenvolvedor Júnior</span>
-        <p class="empresa_texto">Estabelecer e promover diretrizes de design de UX/UI, melhores práticas e padrões baseados no comportamento do usuário.</p>
-        <ul class="empresa_habilidades">
-          <li>CSS</li>
-          <li>Ui Design</li>
-          <li>Ux Design</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-        </ul>
-      </div>
+      </div>  
     </div>
   </section>
 
   <section class="container formacao" id="formacao" aria-label="Formação">
     <h2 class="subtitulo">Formação</h2>
     <div>
-      <p class="descricao formacao_texto">
+      <p class="lg formacao_texto">
         Minha mais recente experiência acadêmica foi o <strong>mestrado</strong> 🎓 que fiz no exterior em <strong>UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
       </p>
-      <ul class="faculdade_lista">
-        <li class="faculdade">
-          <span class="faculdade_tipo">Bacharel</span>
-          <h3 class="faculdade_curso">Administração De Empresas</h3>
-          <span class="faculdade_instituicao">UFRJ</span>
+      <ul class="university_list">
+        <li class="university">
+          <p class="md university_type">Bacharel</p>
+          <h5 class="faculdade_curso">Administração De Empresas</h5>
+          <p class="md university_type">UFRJ</p>
         </li>
-        <li class="faculdade">
-          <span class="faculdade_tipo">Bacharel</span>
-          <h3 class="faculdade_curso">Administração De Empresas</h3>
-          <span class="faculdade_instituicao">UFRJ</span>
+        <li class="university">
+          <p class="md university_type">Bacharel</p>
+          <h5 class="faculdade_curso">Administração De Empresas</h5>
+          <p class="md university_type">UFRJ</p>
         </li>
-        <li class="faculdade">
-          <span class="faculdade_tipo">Bacharel</span>
-          <h3 class="faculdade_curso">Administração De Empresas</h3>
-          <span class="falculdade_instituicao">UFRJ</span>
+        <li class="university">
+          <p class="md university_type">Bacharel</p>
+          <h5 class="faculdade_curso">Administração De Empresas</h5>
+          <p class="md university_type">UFRJ</p>
         </li>
       </ul>
-
-      <div class="formacao_extra">
+      <div class="skills">
         <div class="cursos">
-          <h3>Cursos Intensivos</h3>
+          <h4>Cursos Intensivos</h4>
           <ul>
-            <li>Ux Design <span>56 horas</span></li>
-            <li>Ux Design <span>56 horas</span></li>
+            <li>Ux Design<span> / 56 horas</span></li>
+            <li>Ux Design<span> / 56 horas</span></li>
           </ul>
         </div>
         <div class="idiomas">
-          <h3>Idiomas</h3>
+          <h4>Idiomas</h4>
           <ul>
             <li>Inglês<span> / Fluente</span></li>
             <li>Espanhol<span> / Intermediário</span></li>
@@ -184,19 +144,17 @@
   </section>
   
   <footer>
-    <div class="container contato">
-      <h4>Até a Próxima!</h4>
+    <div class="container contact">
+      <h3>Até a Próxima!</h3>
       <ul>
-        <li><a class="descricao insta" href="#">@g.pole</a></li>
-        <li><a class="descricao numb" href="#">(27) 99582-8561</a></li>
-        <li><a class="descricao email" href="#">gabriel_pole@hotmail.com</a></li>
+        <li><a class="link" target="_blank" href="https://www.linkedin.com/in/gabriel-pole/">in/gabriel-pole/</a></li>
+        <li><a class="numb" target="_blank" href="https://wa.me/5527995828561?text=Ol%C3%A1%2C%20Gabriel%20Pole.%20Gostaria%20de%20...">(27) 99582-8561</a></li>
+        <li><a class="email"   target="_blank" href="mailto:gabriel_pole@hotmail.com?subject=Ol%C3%A1%2C%20gostaria%20de%20...">gabriel_pole@hotmail.com</a></li>
       </ul>
     </div>
     <div class="container copyright">
       <img src="./img/marca.svg" alt="G.Pole">
-      <p>
-        ©2024 Gabriel Pole  todos o direitos reservados
-      </p>
+      <p>©2024 Gabriel Pole  todos o direitos reservados.</p>
     </div>
   </footer>
 </body>
