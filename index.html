@@ -51,93 +51,33 @@
         <div class="content">
           <div class="post">
             <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
+            <div class="info_modal">
               <img class="bg_button" src="img/hovercard.svg" alt="">
               <span class="button_open"></span>
               <div class="title">
                 <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
               </div>
-            </a>
+            </div>
           </div>
           <div class="post">
             <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
+            <div class="info_modal">
               <img class="bg_button" src="img/hovercard.svg" alt="">
               <span class="button_open"></span>
               <div class="title">
                 <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
               </div>
-            </a>
+            </div>
           </div>
           <div class="post">
             <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
+            <div class="info_modal">
               <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
+              <span class="button_open buttonsm"></span>
               <div class="title">
                 <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
               </div>
-            </a>
-          </div>
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </a>
-          </div>
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </a>
-          </div>
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </a>
-          </div>
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </a>
-          </div>
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </a>
-          </div>
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <a class="info" href="#">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -357,9 +297,52 @@
       <p>©2024 Gabriel Pole  todos o direitos reservados.</p>
     </div>
   </footer>
+
+  <dialog class="modal_post">
+     <header>
+      <div class="container">
+        <h3>Coffee Menu App - Schwarzer Café</h3>
+        <button class="buttonsm"></button>
+      </div>
+     </header>
+     <section class="content">
+       <figure>
+        <img src="img/img_modal.jpg" alt="">
+        <figcaption>font: dribble</figcaption>
+       </figure>
+       <p class="">Settings page to allow users to customize their app appearance, including color theme and chart layouts.</p>
+       <p class="bold">❖ Made with Untitled UI and Untitled UI Icons</p>
+       <figure>
+        <img src="img/img_modal.jpg" alt="">
+        <figcaption>font: dribble</figcaption>
+       </figure>
+       <figure>
+        <img src="img/img_modal.jpg" alt="">
+        <figcaption>font: dribble</figcaption>
+       </figure>
+       <h4>Made with Untitled UI</h4>
+       <p class="">Untitled UI is the largest Figma UI kit and design system in the world. Kickstart any project, save thousands of hours, and level up as a designer.</p>
+       <p class="bold">❖ Preview Untitled UI in Figma here</p>
+       <p class="bold">❖ Use the discount code DRIBBBLE for 10% off at untitledui.com</p>
+       <p class="bold">Untitled UI Icons</p>
+     </section>
+  </dialog>
 </body>
 <script>
-document.querySelectorAll(".ver_mais").forEach(function(botao) {
+  //MODAL DE POST 
+  const modal =  document.querySelector("dialog");
+  const button_close = document.querySelector("dialog button");
+  const button = document.querySelectorAll("div.info_modal").forEach(function(open){
+    open.addEventListener("click", function() {
+      modal.showModal();
+    });
+  });
+  button_close.onclick = function(){
+    modal.close()
+  }
+
+  //Ver mais experiência
+  document.querySelectorAll(".ver_mais").forEach(function(botao) {
     botao.addEventListener("click", function() {
       this.parentElement.classList.add("quero_ver");
     });

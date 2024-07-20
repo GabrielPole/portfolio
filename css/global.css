@@ -1,5 +1,5 @@
 /* =========== font by google =========== */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* =========== VARIABLES CSS =========== */
 :root{
@@ -7,6 +7,7 @@
   --bg-page: #161616;
   --bg-ibox: #fff;
   --bg-ibox-card: #f5f5f5;
+  --line-grey: #f3f3f4;
   --line-white: #fff;
   --white: #fff;
   --green:#00A2A6;
@@ -31,18 +32,19 @@
   --font-h2: 9rem;
   --font-h3: 2rem;
   --font-h4: 1.5rem;
+  --font-h4-post: 2rem;
   --font-h5: 1.1rem;
   --font-h6: 0.8rem;
   --font-p-lg: 1.5rem;
   --font-p-md: 0.9rem;
   --font-p-sm: 0.8rem;
+  --font-p-post: 1.25rem;
   --font-caption: 0.6rem;
   --font-btn-sm: 1.125rem;
   
-  --font-weight-700: 700;
-  --font-weight-600: 600;
-  --font-weight-500: 600;
   --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
 
   --line-height-100: 100%;
   --line-height-140: 140%;
@@ -109,7 +111,7 @@ h2{
 }
 h3{
   font-size: var(--font-h3);
-  font-weight: var(--font-weight-600);
+  font-weight: var(--font-weight-500);
   line-height: var(--line-height-160);
 }
 h4{
@@ -119,7 +121,7 @@ h4{
 }
 h5{
   font-size: var(--font-h5);
-  font-weight: var(--font-weight-400);
+  font-weight: var(--font-weight-500);
   line-height: var(--line-height-160);
 }
 h6{
@@ -318,7 +320,6 @@ img{
 }
 .portfolio .headerTab h3{
   color: var(--text-black-he);
-  font-weight: var(--font-weight-400);
   padding: var(--space-12) var(--space-24) var(--space-4) var(--space-24);
   border-radius: var(--space-radio-40) var(--space-radio-14) var(--space-0) var(--space-0);
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;;
@@ -358,18 +359,18 @@ img{
   display: block;
   position: relative;
 }
-.portfolio .content .info{
+.portfolio .content .info_modal{
   display: block;
-  pointer-events:all;
   position: absolute;
   text-decoration: none;
+  cursor: pointer;
   top: 0px;
   width: 100%;
   height: 250px;
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
-.portfolio .info .bg_button{
+.portfolio .info_modal .bg_button{
   position: absolute;
   z-index: 1;
   height: 87px;
@@ -403,12 +404,10 @@ img{
   white-space: nowrap;
   padding: var(--space-12);
 }
-.portfolio  .post:hover .info{
+.portfolio  .post:hover .info_modal{
   opacity: 1;
   pointer-events: all;
 } 
-
-
 
 /* =========== Experence ===========*/
 .experiencia{
@@ -490,7 +489,6 @@ p.empresa_ano{
   color: var(--text-black-me);
 }
 .empresa_titulo, .empresa_tech{
-  font-weight: bold;
   color: var(--text-black-he);
 }
 .empresa_habilidades{
@@ -622,6 +620,8 @@ p.empresa_ano{
 .contact .link::before{
   background: url(/img/link.svg) no-repeat center center;
 }
+
+/* =========== Footer ===========*/
 footer .copyright{
  display: flex;
  justify-content: space-between;
@@ -629,4 +629,72 @@ footer .copyright{
 }
 footer img{
   width: 120px;
+}
+
+/* =========== Modal ===========*/
+dialog:-internal-dialog-in-top-layer {
+  max-width: none;
+  max-height: none;
+}
+.modal_post{
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+dialog header{
+  position: fixed;
+  background: var(--white);
+  width: 100%;
+  border-bottom: 1px solid var(--line-grey);
+}
+dialog .container{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: var(--space-16);
+}
+dialog header button{
+  padding: 20px 24px;
+  border: none;
+  background: url(/img/undo.svg) center no-repeat;
+  background-color: var(--bg-ibox-card);
+  border-radius: var(--space-radio-40);
+  cursor: pointer;
+}
+dialog header button:focus-visible{
+ outline: none;
+}
+dialog .content{
+  max-width: 1200px;
+  height: fit-content;
+  margin: var(--space-104) auto;
+  padding: var(--space-0) var(--space-16);
+}
+dialog figure{
+ margin: var(--space-0) var(--space-0) var(--space-32) var(--space-0);
+}
+dialog figure img{
+  max-height: 768px;
+  border-radius: var(--space-radio-4);
+}
+dialog figure figcaption{
+  text-align: center;
+  font-style: italic;
+  color: var(--text-black-me);
+  padding: var(--space-12);
+}
+dialog h4{
+  font-size: var(--font-h4-post);
+  font-weight: var(--font-weight-500);
+  margin-bottom: var(--space-12);
+}
+dialog p{
+  margin-bottom: var(--space-16);
+  font-size: var(--font-p-post);
+  width: 80ch;
+}
+dialog p.bold{
+  font-weight: var(--font-weight-500);
 }
