@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/vue.js"></script>
 </head>
 <body>
   <header class="container header">
@@ -24,7 +25,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="container introducao">
     <div class="infoText">
       <h1>Hi, I'm  Pole!</h1>
@@ -83,6 +83,36 @@
       </div>
     </div>
   </section>
+  <!-- test Portifólio Vue -->
+  <section id="posts" class="container portfolio">
+    <h2>PORTFÓLIO</h2>
+    <div class="boxFolder">
+      <div class="headerTab">
+          <h3 class="abaBranding">Branding</h3>
+          <h3 class="abaWeb">Web</h3>
+          <h3 class="abaApps active">Apps</h3>
+        </div>
+        <button @click="puxarCursos">Puxar Posts</button>
+        <div class="folder">
+        <div class="content">
+          <div v-for="post, id in posts" class="post">
+            <img :src="post.img.link":alt="post.img.alt">
+            <div class="info_modal">
+              <img class="bg_button" src="img/hovercard.svg" alt="">
+              <span class="button_open"></span>
+              <div class="title">
+                <h3>{{post.nome}}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+  <!--  -->
+
+
   <section class="container experiencia" id="experiencia" aria-label="Experiência">
     <h2>Experiência</h2>
     <div>
@@ -282,7 +312,6 @@
       </div>
     </div>
   </section>
-  
   <footer id="contato">
     <div class="container contact">
       <h3>Tchau, <br> Brigaduu!</h3>
@@ -297,7 +326,6 @@
       <p>©2024 Gabriel Pole  todos o direitos reservados.</p>
     </div>
   </footer>
-
   <dialog class="modal_post">
      <header>
       <div class="container">
@@ -340,13 +368,28 @@
   button_close.onclick = function(){
     modal.close()
   }
-
   //Ver mais experiência
   document.querySelectorAll(".ver_mais").forEach(function(botao) {
     botao.addEventListener("click", function() {
       this.parentElement.classList.add("quero_ver");
     });
-});
+  });
+  // Portifólio Vue
+  const vm = new Vue({
+      el: "#posts",
+      data: {
+        posts: {}
+      },
+      methods: {
+        puxarCursos() {
+          fetch("https://gabrielpole.github.io/VueOrigmaid/post.json")
+          .then(r => r.json())
+          .then(r => {
+            this.posts = r;
+          })
+        }
+      }
+    });
 
 </script>
 </html>
