@@ -23,10 +23,12 @@
      },
      methods: {
        puxarCursos() {
-         fetch("https://gabrielpole.github.io/VueOrigmaid/post.json")
+         fetch("https://gabrielpole.github.io/portifolio/api/posts.json")
          .then(r => r.json())
          .then(r => {
            this.posts = r;
+           console.log(r)
+           
          })
        }
      },

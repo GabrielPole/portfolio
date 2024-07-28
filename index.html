@@ -1,359 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G.POLE</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,500&display=swap" rel="stylesheet">
-  
-  <script src="./js/vue.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header class="container header">
-    <img src="./img/marca.svg" alt="G.Pole">
-    <nav>
-      <ul class="header_menu">
-        <li><a class="btnsm active" href="#home">Início</a></li>
-        <li><a class="btnsm" href="#portifolio">Portfólio</a></li>
-        <li><a class="btnsm" href="#experiencia">Experiência</a></li>
-        <li><a  class="btnsm"href="#formacao">Formação</a></li>
-        <li><a  class="btnsm" href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container introducao">
-    <div class="infoText">
-      <h1>Hi, I'm  Pole!</h1>
-      <p class="lg"> Seja bem-vindo! Sou Ux/Ui Design com mais de 4 anos de experiência, especializado em sistemas web, mobile e sites, entre outros. Tenho como foco criar e cocriar soluções inovadoras que alteram o mundo e a maneira de usar ou visualizar algo existente, ou criado do zero.</p>
-    </div>
-    <img class="photo_profile" src="./img/perfil.png"  alt="foto de gabriel pole">
-    <div class="infoTec">
-      <h3 class="figma">Figma</h3>
-      <h3 class="uxUi">UX/UI</h3>
-      <h3 class="htmlCss">HTML&CSS</h3>
-      <h3 class="javaScript">JavaScript</h3>
-      <h3 class="scrum">Product Owner</h3>
-    </div>
-  </main>
-  <section id="portifolio" class="container portfolio">
-    <h2>PORTFÓLIO</h2>
-    <div class="boxFolder">
-      <div class="headerTab">
-          <h3 class="abaBranding">Branding</h3>
-          <h3 class="abaWeb">Web</h3>
-          <h3 class="abaApps active">Apps</h3>
-        </div>
-        <div class="folder">
-        <div class="content">
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <div class="info_modal">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="https://gabrielpole.github.io/VueOrigmaid/assets/post1.jpg" alt="">
-            <div class="info_modal">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="/img/portfolio/web/Frame 1208.png" alt="">
-            <div class="info_modal">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open buttonsm"></span>
-              <div class="title">
-                <h3>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- test Portifólio Vue -->
-  <section id="posts" class="container portfolio">
-    <h2>PORTFÓLIO</h2>
-    <div class="boxFolder">
-      <div class="headerTab">
-          <h3 class="abaBranding">Branding</h3>
-          <h3 class="abaWeb">Web</h3>
-          <h3 class="abaApps active">Apps</h3>
-        </div>
-        <div class="folder">
-        <div class="content">
-          <div v-for="post, id in posts" class="post">
-            <img :src="post.img.link":alt="post.img.alt">
-            <div class="info_modal">
-              <img class="bg_button" src="img/hovercard.svg" alt="">
-              <span class="button_open"></span>
-              <div class="title">
-                <h3>{{post.nome}}</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
-  
-  <!--  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G.POLE</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,500&display=swap"
+      rel="stylesheet"
+    />
 
-  <section class="container experiencia" id="experiencia" aria-label="Experiência">
-    <h2>Experiência</h2>
-    <div>
-      <p class="lg">Atualmente, trabalho como <strong>Ux/Ui Design Generalista</strong> na Code n' App. Também realizo consultorias de Ux/Ui Design e freelances em projetos que utilizam <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript.</strong> 
-      <div class="empresa">
-        <p class="empresa_ano">2024<br>2 a.</p>
-        <h5 class="empresa_titulo">Code n' App</h5>
-        <h5 class="empresa_tech">Ux/Ui Generalista - TECH Lead</h5>
-        <p class="sm descricao">Como Lead de UX/UI Design, sou responsável por estabelecer e promover diretrizes de design de UX/UI para os projetos da empresa e outras atividades, tais como: <br>
-        ‣ Treinar e desenvolver continuamente estagiários em UX/UI, com a realização de entrevista e aplicação de testes; <br>
-        ‣ Facilitar a comunicação entre a equipe de desenvolvimento, Product Owner e/ou cliente; <br>
-        ‣ Evoluir e manter o Design System e a padronização dos produtos da empresa;<br>
-        ‣ Organizar e distribuir atividades da equipe utilizando metodologias ágeis, bem como realizar levantamentos e estimativas de funcionalidades;<br>
-        ‣ Criar, cocriar e revisar wireframes e mockups responsivos dentro do Figma;<br>
-        ‣ Identificar problemas na experiência do usuário e propor soluções adequadas e teste AB;<br>
-        ‣ Implementar a melhoria contínua dos processos de UX/UI e levantar indicadores para a tomada de decisões;<br>
-        ‣ Documentar e criar componentes com a equipe de desenvolvimento mobile e web, buscando o equilíbrio entre usabilidade, design e esforço de desenvolvimento;<br>
-        ‣ Organizar Sprint de design e gerenciar a capacidade do time;<br>
-        ‣ Conduzir reuniões de Discovery com clientes e/ou PO;<br>
-        ‣ Criar branding e aplicação da identidade visual do cliente nos projetos, garantindo a usabilidade, acessibilidade e consistência. 
-        <button class="ver_mais">...Ver Mais</button></p>
-        <ul class="empresa_habilidades">
-          <li>Design System</li>
-          <li>Product Owner</li>
-          <li>Ux research</li>
-          <li>PowerBI</li>
-          <li>DevOps</li>
-          <li>Gerenciamento</li>
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <img src="./img/marca.svg" alt="G.Pole" />
+      <nav>
+        <ul class="header_menu">
+          <li><a class="btnsm active" href="#home">Início</a></li>
+          <li><a class="btnsm" href="#portifolio">Portfólio</a></li>
+          <li><a class="btnsm" href="#experiencia">Experiência</a></li>
+          <li><a class="btnsm" href="#formacao">Formação</a></li>
+          <li><a class="btnsm" href="#contato">Contato</a></li>
         </ul>
-      </div> 
-      <div class="empresa">
-        <p class="empresa_ano">2022<br>9 m.</p>
-        <h5 class="empresa_titulo">Code n' App</h5>
-        <h5 class="empresa_tech">Ux/Ui Pleno</h5>
-        <p class="sm descricao">‣ Criar protótipos de alta fidelidade para aplicativos móveis, websites sistemas responsivos;<br>
-          ‣ Desenvolver interfaces de usuário intuitivas e visualmente atraentes, seguindo as melhores práticas de UX/UI;
-          ‣ Adaptar designs para diferentes dispositivos e tamanhos de tela, garantindo uma experiência consistente e eficaz em todos os dispositivos;<br>
-          ‣ Colaborar com equipes de desenvolvimento e de produto para entender requisitos e transformar ideias em designs funcionais;<br>
-          ‣ Realizar testes de usabilidade e iterar designs com base em feedbacks para melhorar a experiência do usuário;<br>
-          ‣ Manter consistência visual e aplicar padrões de design em todos os projetos, seguindo diretrizes de design da marca e sistemas de design;<br>
-          ‣ Documentar e comunicar efetivamente suas decisões de design e processos para outras partes interessadas no projeto;<br>
-          ‣ Realizar pesquisas de conceito e usabilidade, coletando feedback para aprimoramento contínuo;<br>
-          ‣  Desenvolver wireframes e protótipos focados nas necessidades dos clientes e do negócio;<br>
-          ‣  Entregar especificações técnicas de componentes para desenvolvedores;<br>
-          ‣ Liderar e mentorar equipes de UX/UI na criação e design de produtos digitais;<br>
-          ‣ Conduzir reuniões de produtos, processos de construção de visão e de discovery;<br>
-          ‣ Conduzir a realização de pesquisas qualitativas e quantitativas e benchmarkings;<br>
-          ‣ Conduzir e ensinar a realização de processos de discovery de features e novos produtos para estagiários;<br>
-          ‣ Conduzir o mapeamento da jornada do usuário em conjunto com PSPO, identificar problemas e oportunidades de melhorias nos fluxos existentes, propor novos fluxos;<br>
-          ‣ Criar documentação e guidelines de design; <br>
-          ‣ Estabelecer e implementar processos de design e boas práticas de UX/UI.
-        <button class="ver_mais">...Ver Mais</button></p>
-        <ul class="empresa_habilidades">
-          <li>Figma e FigJam</li>
-          <li>Web Site</li>
-          <li>Miro</li>
-          <li>Discovery</li>
-          <li>Benchmarkings</li>
-          <li>Design Thing</li>
-          <li>Ux writing</li>
-        </ul>
-      </div> 
-      <div class="empresa">
-        <p class="empresa_ano">2021<br>1 a.</p>
-        <h5 class="empresa_titulo">Code n' App</h5>
-        <h5 class="empresa_tech">Ux/Ui junior</h5>
-        <p class="sm descricao">Atuar na criação de interfaces intuitivas e atraentes, colaborando estreitamente com equipes de desenvolvimento e produto. Minha responsabilidade inclui desenvolver wireframes, protótipos de alta fidelidade e designs responsivos, garantindo uma experiência consistente em diversos dispositivos. Compreender as especificações do produto para desenvolver soluções eficazes, focadas nas necessidades dos clientes e do negócio. 
-        <button class="ver_mais">...Ver Mais</button></p>
-        <ul class="empresa_habilidades">
-          <li>Figma</li>
-          <li>Web & Apps Design</li>
-          <li>Design System</li>
-          <li>Branding</li>
-          <li>Scrum</li>
-        </ul>
-      </div> 
-      <div class="empresa">
-        <p class="empresa_ano">2021<br>3 m.</p>
-        <h5 class="empresa_titulo">Code n' App</h5>
-        <h5 class="empresa_tech">Ux/Ui Treinne</h5>
-        <p class="sm descricao">Desenvolver interfaces e fluxos de apresentação, participar de refinamento com o cliente e propor soluções conforme as regras de negócios e dores apresentadas.
-          <button class="ver_mais">...Ver Mais</button>
+      </nav>
+    </header>
+    <main class="container introducao">
+      <div class="infoText">
+        <h1>Hi, I'm Pole!</h1>
+        <p class="lg">
+          Seja bem-vindo! Sou Ux/Ui Design com mais de 4 anos de experiência,
+          especializado em sistemas web, mobile e sites, entre outros. Tenho
+          como foco criar e cocriar soluções inovadoras que alteram o mundo e a
+          maneira de usar ou visualizar algo existente, ou criado do zero.
         </p>
-        <ul class="empresa_habilidades">
-          <li>Ux/Ui design</li>
-          <li>Mockup & Wireframes</li>
-          <li>Figma</li>
-          <li>Adobe XD</li>
-        </ul>
-      </div> 
-      <div class="empresa">
-        <p class="empresa_ano">2020<br>8 m.</p>
-        <h5 class="empresa_titulo">Code n' App</h5>
-        <h5 class="empresa_tech">Estágio Front-End</h5>
-        <p class="sm descricao">Desenvolvimento de interfaces web, criando e mantendo elementos visuais em todo os sistemas.<br>
-        <ul class="empresa_habilidades">
-          <li>CSS, HTML & JS </li>
-          <li>C#</li>
-          <li>Asp.NET MVC</li>
-          <li>JQuery</li>
-          <li>Bootstrap</li>
-          <li>Git</li>
-        </ul>
-      </div> 
-      <div class="empresa">
-        <p class="empresa_ano">2020<br>4 m.</p>
-        <h5 class="empresa_titulo">Pred Engenharia</h5>
-        <h5 class="empresa_tech">Estágio SQL SERVER</h5>
-        <p class="sm descricao">Manutenção e correção de procedures em banco de dados. Aprimorar e sugerir melhorias nos relatórios e processos de manutenção no produto da empresa.</p>
-        <ul class="empresa_habilidades">
-          <li>SQL SERVER</li>
-          <li>Crystal Reports</li>
-          <li>Helpdesk</li>
-          <li>Visual Basic</li>
-          <li>Management Studio</li>
-        </ul>
-      </div> 
-      <div class="empresa">
-        <p class="empresa_ano">2019<br>7 m.</p>
-        <h5 class="empresa_titulo">ESESP</h5>
-        <h5 class="empresa_tech">Estágio em Infraestrura</h5>
-        <p class="sm descricao">Responsável pela infraestrutura de rede e pela conexão dos funcionários ao servidor Windows Server. Realiza a manutenção de computadores e outros equipamentos, garantindo o bom funcionamento e a segurança da rede.
-        <button class="ver_mais">...Ver Mais</button></p>
-        <ul class="empresa_habilidades">
-          <li>Windows Server</li>
-          <li>Microsoft Office</li>
-          <li>Gerenciamento de Licenças</li>
-          <li>Chamados</li>
-        </ul>
-      </div> 
-      <div class="empresa">
-        <p class="empresa_ano">2016<br>1 a. 5m.</p>
-        <h5 class="empresa_titulo">Acerlor Mittal - CIEE</h5>
-        <h5 class="empresa_tech">Auxiliar de Folha de Pagamento</h5>
-        <p class="sm descricao">Auxiliar no processamento de salários, controle de ponto e benefícios. Consultar informações, emitir atestados, organizar documentos e ajudar os funcionários. Experiência prática na área de administração de pessoal e conhecimento sobre rotinas de departamento pessoal.
-        <button class="ver_mais">...Ver Mais</button></p>
-        <ul class="empresa_habilidades">
-          <li>Gestão de Holerite</li>
-          <li>Atendimento a Funcionários</li>
-          <li>administração</li>
-          <li>Apoio ao RH</li>
-        </ul>
-      </div> 
-    </div>
-  </section>
-  <section class="container formacao" id="formacao" aria-label="Formação">
-    <h2 class="subtitulo">Formação</h2>
-    <div>
-      <p class="lg formacao_texto">
-        Minha mais recente experiência acadêmica foi a certificação <strong>PSPO</strong> 🏃🏽‍➡️ que realizei na <strong>scrum.org</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
-      </p>
-      <ul class="university_list">
-        <li class="university">
-          <p class="md university_type">Bacharel</p>
-          <h5 class="faculdade_curso">Sistema de Informação</h5>
-          <p class="md university_type">Estácio de Sá</p>
-        </li>
-        <li class="university">
-          <p class="md university_type">Formação</p>
-          <h5 class="faculdade_curso">UX/UI Design</h5>
-          <p class="md university_type">ORIGAMID</p>
-        </li>
-        <li class="university">
-          <p class="md university_type">Certificação</p>
-          <h5 class="faculdade_curso">Profissional Design de UX no Google</h5>
-          <p class="md university_type">Coursera</p>
-        </li>
-      </ul>
-      <div class="skills">
-        <div class="cursos">
-          <h4>Cursos Intensivos</h4>
-          <ul>
-            <li>PSPO<span> / CERTIFICAÇÃO / SCRUM.ORG</span></li>
-            <li>UI Desing Inciante e Avancado<span> / 15h / ORIGAMID</span></li>
-            <li>Ux Design Heuríticas<span> / 8h / ORIGAMID</span></li>
-            <li>Preparatório Scrum e Cynefin<span> / 12h / GINO Terentim</span></li>
-            <li>Tiprografia Avançada<span> / 8h / ORIGAMID</span></li>
-            <li>Tiprografia Avançada<span> / 12h / ORIGAMID</span></li>
-            <li>HTML e CSS<span> / 23h / ORIGAMID</span></li>
-            <li>CSS GRID e FLEXBOX<span> / 8h / ORIGAMID</span></li>
-            <li>JavaScript ES6<span> / 37h / ORIGAMID</span></li>
-            <li>Bootstrap<span> / 13h / AlURA</span></li>
-            <li>Formação Front-End<span> / 22h / AlURA</span></li>
-            <li>NLW REACT<span> / 16h / ROCKET SEAT</span></li>
-            <li>Formação Java<span> / 42h / AlURA</span></li>
-            <li>SQL SERVER<span> / 5h / AlURA</span></li>
-            <li>MY SQL<span> / 5h / CURSO EM VÍDEO</span></li>
+      </div>
+      <img
+        class="photo_profile"
+        src="./img/perfil.png"
+        alt="foto de gabriel pole"
+      />
+      <div class="infoTec">
+        <h3 class="figma">Figma</h3>
+        <h3 class="uxUi">UX/UI</h3>
+        <h3 class="htmlCss">HTML&CSS</h3>
+        <h3 class="javaScript">JavaScript</h3>
+        <h3 class="scrum">Product Owner</h3>
+      </div>
+    </main>
+    <section id="portifolio" class="container portfolio">
+      <h2>PORTFÓLIO</h2>
+      <div class="boxFolder">
+        <div class="headerTab">
+          <h3 class="abaBranding">Branding</h3>
+          <h3 class="abaWeb">Web</h3>
+          <h3 class="abaApps active">Apps</h3>
+        </div>
+        <div class="folder">
+          <div class="content">
+            <div class="post">
+              <img src="/img/portfolio/web/Frame 1208.png" alt="" />
+              <div class="info_modal">
+                <img class="bg_button" src="img/hovercard.svg" alt="" />
+                <span class="button_open"></span>
+                <div class="title">
+                  <h3>
+                    Lorem Ipsum é simplesmente uma simulação de texto da
+                    indústria tipográfica e de impressos.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <img
+                src="https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png"
+                alt=""
+              />
+              <div class="info_modal">
+                <img class="bg_button" src="img/hovercard.svg" alt="" />
+                <span class="button_open"></span>
+                <div class="title">
+                  <h3>
+                    Lorem Ipsum é simplesmente uma simulação de texto da
+                    indústria tipográfica e de impressos.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <img src="/img/portfolio/web/Frame 1208.png" alt="" />
+              <div class="info_modal">
+                <img class="bg_button" src="img/hovercard.svg" alt="" />
+                <span class="button_open buttonsm"></span>
+                <div class="title">
+                  <h3>
+                    Lorem Ipsum é simplesmente uma simulação de texto da
+                    indústria tipográfica e de impressos.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- test Portifólio Vue -->
+    <section id="posts" class="container portfolio">
+      <h2>PORTFÓLIO</h2>
+      <div class="boxFolder">
+        <div class="headerTab">
+          <h3 class="abaBranding">Branding</h3>
+          <h3 class="abaWeb">Web</h3>
+          <h3 class="abaApps active">Apps</h3>
+        </div>
+        <div class="folder">
+          <div class="content">
+            <div v-for="post, id in posts" class="post">
+              <img :src="post.img.link" :alt="post.img.alt" />
+              <div class="info_modal">
+                <img class="bg_button" src="img/hovercard.svg" alt="" />
+                <span class="button_open"></span>
+                <div class="title">
+                  <h3>{{post.nome}}</h3>
+                  {{post}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <section
+      class="container experiencia"
+      id="experiencia"
+      aria-label="Experiência"
+    >
+      <h2>Experiência</h2>
+      <div>
+        <p class="lg">
+          Atualmente, trabalho como <strong>Ux/Ui Design Generalista</strong> na
+          Code n' App. Também realizo consultorias de Ux/Ui Design e freelances
+          em projetos que utilizam <strong>HTML</strong>, <strong>CSS</strong> e
+          <strong>JavaScript.</strong>
+        </p>
+        <div class="empresa">
+          <p class="empresa_ano">2024<br />2 a.</p>
+          <h5 class="empresa_titulo">Code n' App</h5>
+          <h5 class="empresa_tech">Ux/Ui Generalista - TECH Lead</h5>
+          <p class="sm descricao">
+            Como Lead de UX/UI Design, sou responsável por estabelecer e
+            promover diretrizes de design de UX/UI para os projetos da empresa e
+            outras atividades, tais como: <br />
+            ‣ Treinar e desenvolver continuamente estagiários em UX/UI, com a
+            realização de entrevista e aplicação de testes; <br />
+            ‣ Facilitar a comunicação entre a equipe de desenvolvimento, Product
+            Owner e/ou cliente; <br />
+            ‣ Evoluir e manter o Design System e a padronização dos produtos da
+            empresa;<br />
+            ‣ Organizar e distribuir atividades da equipe utilizando
+            metodologias ágeis, bem como realizar levantamentos e estimativas de
+            funcionalidades;<br />
+            ‣ Criar, cocriar e revisar wireframes e mockups responsivos dentro
+            do Figma;<br />
+            ‣ Identificar problemas na experiência do usuário e propor soluções
+            adequadas e teste AB;<br />
+            ‣ Implementar a melhoria contínua dos processos de UX/UI e levantar
+            indicadores para a tomada de decisões;<br />
+            ‣ Documentar e criar componentes com a equipe de desenvolvimento
+            mobile e web, buscando o equilíbrio entre usabilidade, design e
+            esforço de desenvolvimento;<br />
+            ‣ Organizar Sprint de design e gerenciar a capacidade do time;<br />
+            ‣ Conduzir reuniões de Discovery com clientes e/ou PO;<br />
+            ‣ Criar branding e aplicação da identidade visual do cliente nos
+            projetos, garantindo a usabilidade, acessibilidade e consistência. 
+            <button class="ver_mais">...Ver Mais</button>
+          </p>
+          <ul class="empresa_habilidades">
+            <li>Design System</li>
+            <li>Product Owner</li>
+            <li>Ux research</li>
+            <li>PowerBI</li>
+            <li>DevOps</li>
+            <li>Gerenciamento</li>
           </ul>
         </div>
-        <div class="idiomas">
-          <h4>Idiomas</h4>
-          <ul>
-            <li>Inglês<span> / A2 / DUOLINGO e FALOU</span></li>
-            <li>Espanhol<span> / B2 / 6m. EXTERIOR</span></li>
+        <div class="empresa">
+          <p class="empresa_ano">2022<br />9 m.</p>
+          <h5 class="empresa_titulo">Code n' App</h5>
+          <h5 class="empresa_tech">Ux/Ui Pleno</h5>
+          <p class="sm descricao">
+            ‣ Criar protótipos de alta fidelidade para aplicativos móveis,
+            websites sistemas responsivos;<br />
+            ‣ Desenvolver interfaces de usuário intuitivas e visualmente
+            atraentes, seguindo as melhores práticas de UX/UI; ‣ Adaptar designs
+            para diferentes dispositivos e tamanhos de tela, garantindo uma
+            experiência consistente e eficaz em todos os dispositivos;<br />
+            ‣ Colaborar com equipes de desenvolvimento e de produto para
+            entender requisitos e transformar ideias em designs funcionais;<br />
+            ‣ Realizar testes de usabilidade e iterar designs com base em
+            feedbacks para melhorar a experiência do usuário;<br />
+            ‣ Manter consistência visual e aplicar padrões de design em todos os
+            projetos, seguindo diretrizes de design da marca e sistemas de
+            design;<br />
+            ‣ Documentar e comunicar efetivamente suas decisões de design e
+            processos para outras partes interessadas no projeto;<br />
+            ‣ Realizar pesquisas de conceito e usabilidade, coletando feedback
+            para aprimoramento contínuo;<br />
+            ‣ Desenvolver wireframes e protótipos focados nas necessidades dos
+            clientes e do negócio;<br />
+            ‣ Entregar especificações técnicas de componentes para
+            desenvolvedores;<br />
+            ‣ Liderar e mentorar equipes de UX/UI na criação e design de
+            produtos digitais;<br />
+            ‣ Conduzir reuniões de produtos, processos de construção de visão e
+            de discovery;<br />
+            ‣ Conduzir a realização de pesquisas qualitativas e quantitativas e
+            benchmarkings;<br />
+            ‣ Conduzir e ensinar a realização de processos de discovery de
+            features e novos produtos para estagiários;<br />
+            ‣ Conduzir o mapeamento da jornada do usuário em conjunto com PSPO,
+            identificar problemas e oportunidades de melhorias nos fluxos
+            existentes, propor novos fluxos;<br />
+            ‣ Criar documentação e guidelines de design; <br />
+            ‣ Estabelecer e implementar processos de design e boas práticas de
+            UX/UI.
+            <button class="ver_mais">...Ver Mais</button>
+          </p>
+          <ul class="empresa_habilidades">
+            <li>Figma e FigJam</li>
+            <li>Web Site</li>
+            <li>Miro</li>
+            <li>Discovery</li>
+            <li>Benchmarkings</li>
+            <li>Design Thing</li>
+            <li>Ux writing</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <p class="empresa_ano">2021<br />1 a.</p>
+          <h5 class="empresa_titulo">Code n' App</h5>
+          <h5 class="empresa_tech">Ux/Ui junior</h5>
+          <p class="sm descricao">
+            Atuar na criação de interfaces intuitivas e atraentes, colaborando
+            estreitamente com equipes de desenvolvimento e produto. Minha
+            responsabilidade inclui desenvolver wireframes, protótipos de alta
+            fidelidade e designs responsivos, garantindo uma experiência
+            consistente em diversos dispositivos. Compreender as especificações
+            do produto para desenvolver soluções eficazes, focadas nas
+            necessidades dos clientes e do negócio. 
+            <button class="ver_mais">...Ver Mais</button>
+          </p>
+          <ul class="empresa_habilidades">
+            <li>Figma</li>
+            <li>Web & Apps Design</li>
+            <li>Design System</li>
+            <li>Branding</li>
+            <li>Scrum</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <p class="empresa_ano">2021<br />3 m.</p>
+          <h5 class="empresa_titulo">Code n' App</h5>
+          <h5 class="empresa_tech">Ux/Ui Treinne</h5>
+          <p class="sm descricao">
+            Desenvolver interfaces e fluxos de apresentação, participar de
+            refinamento com o cliente e propor soluções conforme as regras de
+            negócios e dores apresentadas.
+            <button class="ver_mais">...Ver Mais</button>
+          </p>
+          <ul class="empresa_habilidades">
+            <li>Ux/Ui design</li>
+            <li>Mockup & Wireframes</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <p class="empresa_ano">2020<br />8 m.</p>
+          <h5 class="empresa_titulo">Code n' App</h5>
+          <h5 class="empresa_tech">Estágio Front-End</h5>
+          <p class="sm descricao">
+            Desenvolvimento de interfaces web, criando e mantendo elementos
+            visuais em todo os sistemas.<br />
+          </p>
+          <ul class="empresa_habilidades">
+            <li>CSS, HTML & JS</li>
+            <li>C#</li>
+            <li>Asp.NET MVC</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <p class="empresa_ano">2020<br />4 m.</p>
+          <h5 class="empresa_titulo">Pred Engenharia</h5>
+          <h5 class="empresa_tech">Estágio SQL SERVER</h5>
+          <p class="sm descricao">
+            Manutenção e correção de procedures em banco de dados. Aprimorar e
+            sugerir melhorias nos relatórios e processos de manutenção no
+            produto da empresa.
+          </p>
+          <ul class="empresa_habilidades">
+            <li>SQL SERVER</li>
+            <li>Crystal Reports</li>
+            <li>Helpdesk</li>
+            <li>Visual Basic</li>
+            <li>Management Studio</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <p class="empresa_ano">2019<br />7 m.</p>
+          <h5 class="empresa_titulo">ESESP</h5>
+          <h5 class="empresa_tech">Estágio em Infraestrura</h5>
+          <p class="sm descricao">
+            Responsável pela infraestrutura de rede e pela conexão dos
+            funcionários ao servidor Windows Server. Realiza a manutenção de
+            computadores e outros equipamentos, garantindo o bom funcionamento e
+            a segurança da rede. <button class="ver_mais">...Ver Mais</button>
+          </p>
+          <ul class="empresa_habilidades">
+            <li>Windows Server</li>
+            <li>Microsoft Office</li>
+            <li>Gerenciamento de Licenças</li>
+            <li>Chamados</li>
+          </ul>
+        </div>
+        <div class="empresa">
+          <p class="empresa_ano">2016<br />1 a. 5m.</p>
+          <h5 class="empresa_titulo">Acerlor Mittal - CIEE</h5>
+          <h5 class="empresa_tech">Auxiliar de Folha de Pagamento</h5>
+          <p class="sm descricao">
+            Auxiliar no processamento de salários, controle de ponto e
+            benefícios. Consultar informações, emitir atestados, organizar
+            documentos e ajudar os funcionários. Experiência prática na área de
+            administração de pessoal e conhecimento sobre rotinas de
+            departamento pessoal. <button class="ver_mais">...Ver Mais</button>
+          </p>
+          <ul class="empresa_habilidades">
+            <li>Gestão de Holerite</li>
+            <li>Atendimento a Funcionários</li>
+            <li>administração</li>
+            <li>Apoio ao RH</li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-  <footer id="contato">
-    <div class="container contact">
-      <h3>Tchau, <br> Brigaduu!</h3>
-      <ul>
-        <li><a class="link" target="_blank" href="https://www.linkedin.com/in/gabriel-pole/">in/gabriel-pole/</a></li>
-        <li><a class="numb" target="_blank" href="https://wa.me/5527995828561?text=Ol%C3%A1%2C%20Gabriel%20Pole.%20Gostaria%20de%20...">(27) 99582-8561</a></li>
-        <li><a class="email"   target="_blank" href="mailto:gabriel_pole@hotmail.com?subject=Ol%C3%A1%2C%20gostaria%20de%20...">gabriel_pole@hotmail.com</a></li>
-      </ul>
-    </div>
-    <div class="container copyright">
-      <img src="./img/marca.svg" alt="G.Pole">
-      <p>©2024 Gabriel Pole  todos o direitos reservados.</p>
-    </div>
-  </footer>
-  <dialog class="modal_post">
-     <header>
-      <div class="container">
-        <h3>Coffee Menu App - Schwarzer Café</h3>
-        <button class="buttonsm"></button>
+    </section>
+    <section class="container formacao" id="formacao" aria-label="Formação">
+      <h2 class="subtitulo">Formação</h2>
+      <div>
+        <p class="lg formacao_texto">
+          Minha mais recente experiência acadêmica foi a certificação
+          <strong>PSPO</strong> 🏃🏽‍➡️ que realizei na
+          <strong>scrum.org</strong>. Além disso me mantenho sempre atualizado
+          com cursos intensivos online.
+        </p>
+        <ul class="university_list">
+          <li class="university">
+            <p class="md university_type">Bacharel</p>
+            <h5 class="faculdade_curso">Sistema de Informação</h5>
+            <p class="md university_type">Estácio de Sá</p>
+          </li>
+          <li class="university">
+            <p class="md university_type">Formação</p>
+            <h5 class="faculdade_curso">UX/UI Design</h5>
+            <p class="md university_type">ORIGAMID</p>
+          </li>
+          <li class="university">
+            <p class="md university_type">Certificação</p>
+            <h5 class="faculdade_curso">Profissional Design de UX no Google</h5>
+            <p class="md university_type">Coursera</p>
+          </li>
+        </ul>
+        <div class="skills">
+          <div class="cursos">
+            <h4>Cursos Intensivos</h4>
+            <ul>
+              <li>PSPO<span> / CERTIFICAÇÃO / SCRUM.ORG</span></li>
+              <li>
+                UI Desing Inciante e Avancado<span> / 15h / ORIGAMID</span>
+              </li>
+              <li>Ux Design Heuríticas<span> / 8h / ORIGAMID</span></li>
+              <li>
+                Preparatório Scrum e Cynefin<span> / 12h / GINO Terentim</span>
+              </li>
+              <li>Tiprografia Avançada<span> / 8h / ORIGAMID</span></li>
+              <li>Tiprografia Avançada<span> / 12h / ORIGAMID</span></li>
+              <li>HTML e CSS<span> / 23h / ORIGAMID</span></li>
+              <li>CSS GRID e FLEXBOX<span> / 8h / ORIGAMID</span></li>
+              <li>JavaScript ES6<span> / 37h / ORIGAMID</span></li>
+              <li>Bootstrap<span> / 13h / AlURA</span></li>
+              <li>Formação Front-End<span> / 22h / AlURA</span></li>
+              <li>NLW REACT<span> / 16h / ROCKET SEAT</span></li>
+              <li>Formação Java<span> / 42h / AlURA</span></li>
+              <li>SQL SERVER<span> / 5h / AlURA</span></li>
+              <li>MY SQL<span> / 5h / CURSO EM VÍDEO</span></li>
+            </ul>
+          </div>
+          <div class="idiomas">
+            <h4>Idiomas</h4>
+            <ul>
+              <li>Inglês<span> / A2 / DUOLINGO e FALOU</span></li>
+              <li>Espanhol<span> / B2 / 6m. EXTERIOR</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
-     </header>
-     <section class="content">
-       <figure>
-        <img src="img/img_modal.jpg" alt="">
-        <figcaption>font: dribble</figcaption>
-       </figure>
-       <p class="">Settings page to allow users to customize their app appearance, including color theme and chart layouts.</p>
-       <p class="bold">❖ Made with Untitled UI and Untitled UI Icons</p>
-       <figure>
-        <img src="img/img_modal.jpg" alt="">
-        <figcaption>font: dribble</figcaption>
-       </figure>
-       <figure>
-        <img src="img/img_modal.jpg" alt="">
-        <figcaption>font: dribble</figcaption>
-       </figure>
-       <h4>Made with Untitled UI</h4>
-       <p class="">Untitled UI is the largest Figma UI kit and design system in the world. Kickstart any project, save thousands of hours, and level up as a designer.</p>
-       <p class="bold">❖ Preview Untitled UI in Figma here</p>
-       <p class="bold">❖ Use the discount code DRIBBBLE for 10% off at untitledui.com</p>
-       <p class="bold">Untitled UI Icons</p>
-     </section>
-  </dialog>
-</body>
-<script src="js/app.js"></script>
+    </section>
+    <footer id="contato">
+      <div class="container contact">
+        <h3>
+          Tchau, <br />
+          Brigaduu!
+        </h3>
+        <ul>
+          <li>
+            <a
+              class="link"
+              target="_blank"
+              href="https://www.linkedin.com/in/gabriel-pole/"
+              >in/gabriel-pole/</a
+            >
+          </li>
+          <li>
+            <a
+              class="numb"
+              target="_blank"
+              href="https://wa.me/5527995828561?text=Ol%C3%A1%2C%20Gabriel%20Pole.%20Gostaria%20de%20..."
+              >(27) 99582-8561</a
+            >
+          </li>
+          <li>
+            <a
+              class="email"
+              target="_blank"
+              href="mailto:gabriel_pole@hotmail.com?subject=Ol%C3%A1%2C%20gostaria%20de%20..."
+              >gabriel_pole@hotmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="container copyright">
+        <img src="./img/marca.svg" alt="G.Pole" />
+        <p>©2024 Gabriel Pole todos o direitos reservados.</p>
+      </div>
+    </footer>
+    <dialog class="modal_post">
+      <header>
+        <div class="container">
+          <h3>Coffee Menu App - Schwarzer Café</h3>
+          <button class="buttonsm"></button>
+        </div>
+      </header>
+      <section class="content">
+        <figure>
+          <img src="img/img_modal.jpg" alt="" />
+          <figcaption>font: dribble</figcaption>
+        </figure>
+        <p class="">
+          Settings page to allow users to customize their app appearance,
+          including color theme and chart layouts.
+        </p>
+        <p class="bold">❖ Made with Untitled UI and Untitled UI Icons</p>
+        <figure>
+          <img src="img/img_modal.jpg" alt="" />
+          <figcaption>font: dribble</figcaption>
+        </figure>
+        <figure>
+          <img src="img/img_modal.jpg" alt="" />
+          <figcaption>font: dribble</figcaption>
+        </figure>
+        <h4>Made with Untitled UI</h4>
+        <p class="">
+          Untitled UI is the largest Figma UI kit and design system in the
+          world. Kickstart any project, save thousands of hours, and level up as
+          a designer.
+        </p>
+        <p class="bold">❖ Preview Untitled UI in Figma here</p>
+        <p class="bold">
+          ❖ Use the discount code DRIBBBLE for 10% off at untitledui.com
+        </p>
+        <p class="bold">Untitled UI Icons</p>
+      </section>
+    </dialog>
+  </body>
+  <script src="js/app.js"></script>
 </html>

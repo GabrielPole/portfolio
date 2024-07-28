@@ -4,7 +4,7 @@
     "nome": "Sibyl vane",
     "tip": "1",
     "img":{
-      "link": "./api/postes/post1/imgcard.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
   },
@@ -12,7 +12,7 @@
     "id": 1,
     "nome": "Gail Altenwertht",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/1.png",
+      "link": "./api/posts/post1/imgcard.png",
       "alt":  "Descrição da img"
     }
   },
