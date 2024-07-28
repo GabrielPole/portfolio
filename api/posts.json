@@ -12,7 +12,7 @@
     "id": 1,
     "nome": "Gail Altenwertht",
     "img":{
-      "link": "./api/posts/post1/imgcard.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt":  "Descrição da img"
     }
   },
@@ -21,7 +21,7 @@
     "nome": "UnLIMITED PRETENTIOUS IDEIAS",
     "tip": "1",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/2.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
      },
@@ -30,7 +30,7 @@
     "nome": "Personality",
     "tip": "1",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/3.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
   },
@@ -39,7 +39,7 @@
     "nome": "Create your Own",
     "tip": "2",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/4.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
   },
@@ -48,7 +48,7 @@
     "nome": "DESIGN SERVICES TO HEALP YOUR BRAND SHINE",
     "tip": "0",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/5.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
   },
@@ -57,7 +57,7 @@
     "nome": "NFT Dream Gallery",
     "tip": "1",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/6.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
   },
@@ -66,7 +66,7 @@
     "nome": "John Doe",
     "tip": "0",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/7.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
      },
@@ -75,7 +75,7 @@
     "nome": "Building your Brand In Figital World",
     "tip": "0",
     "img":{
-      "link": "https://gabrielpole.github.io/VueOrigmaid/assets/8.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt": "Descrição da img"
     }
   }
