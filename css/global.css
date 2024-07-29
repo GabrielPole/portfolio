@@ -390,7 +390,7 @@ img{
   top: 12px;
   width: 40px;
   height: 40px;
-  background: url("/img/open.svg") no-repeat center;
+  background: url(../img/open.svg) no-repeat center;
   background-color: var(--bg-ibox-card);
   border-radius: var(--space-radio-40);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -3px -1px 4px 0px rgba(0, 0, 0, 0.25);
@@ -658,11 +658,13 @@ footer img{
     transform: translate3D(0px, 0, 0);
   }
 }
-.modal_post header{
-  position: fixed;
+.modal_post header {
+  position: sticky; /* Use position: fixed se preferir */
+  top: 0px;
   background: var(--white);
   width: 100%;
   border-bottom: 1px solid var(--line-grey);
+  z-index: 1001; /* Garante que o header fique acima de outros elementos */
 }
 .modal_post .container{
   display: flex;
@@ -673,7 +675,7 @@ footer img{
 .modal_post header button{
   padding: 20px 24px;
   border: none;
-  background: url(/img/undo.svg) center no-repeat;
+  background: url(../img/undo.svg) center no-repeat;
   background-color: var(--bg-ibox-card);
   border-radius: var(--space-radio-40);
   cursor: pointer;
