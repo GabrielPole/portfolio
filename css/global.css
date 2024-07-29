@@ -356,12 +356,16 @@ img{
   overflow-y: auto;
 }
 .portfolio .content .post{
-  display: block;
   position: relative;
+  display: block;
+}
+.portfolio .content .post{
+  border-radius: 100px;
 }
 .portfolio .content .info_modal{
   display: block;
   position: absolute;
+  z-index: 100;
   text-decoration: none;
   cursor: pointer;
   top: 0px;
@@ -632,30 +636,30 @@ footer img{
 }
 
 /* =========== Modal ===========*/
-dialog:-internal-dialog-in-top-layer {
-  max-width: none;
-  max-height: none;
-}
-.modal_post{
+.modal_post {
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  height: 100%;
-  border: none;
-  padding: 0px;
-  margin: 0px;
+  height: 100vh;
+  overflow-y:auto;
+  background: white;
+  color: var(--text-black-he);
 }
-dialog header{
+.modal_post header{
   position: fixed;
   background: var(--white);
   width: 100%;
   border-bottom: 1px solid var(--line-grey);
 }
-dialog .container{
+.modal_post .container{
   display: flex;
   justify-content: space-between;
   align-self: center;
   padding: var(--space-16);
 }
-dialog header button{
+.modal_post header button{
   padding: 20px 24px;
   border: none;
   background: url(/img/undo.svg) center no-repeat;
@@ -663,38 +667,35 @@ dialog header button{
   border-radius: var(--space-radio-40);
   cursor: pointer;
 }
-dialog header button:focus-visible{
- outline: none;
-}
-dialog .content{
+.modal_post .content{
   max-width: 1200px;
   height: fit-content;
   margin: var(--space-104) auto;
   padding: var(--space-0) var(--space-16);
 }
-dialog figure{
+.modal_post figure{
  margin: var(--space-0) var(--space-0) var(--space-32) var(--space-0);
 }
-dialog figure img{
+.modal_post figure img{
   max-height: 768px;
   border-radius: var(--space-radio-4);
 }
-dialog figure figcaption{
+.modal_post figure figcaption{
   text-align: center;
   font-style: italic;
   color: var(--text-black-me);
   padding: var(--space-12);
 }
-dialog h4{
+.modal_post h4{
   font-size: var(--font-h4-post);
   font-weight: var(--font-weight-500);
   margin-bottom: var(--space-12);
 }
-dialog p{
-  margin-bottom: var(--space-16);
+.modal_post p{
+  margin-bottom: var(--space-24);
   font-size: var(--font-p-post);
   width: 80ch;
 }
-dialog p.bold{
-  font-weight: var(--font-weight-500);
+.modal_post p.bold{
+  font-weight: var(--font-weight-700);
 }

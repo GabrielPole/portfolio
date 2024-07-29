@@ -51,6 +51,7 @@
         <h3 class="scrum">Product Owner</h3>
       </div>
     </main>
+
     <section id="portifolio" class="container portfolio">
       <h2>PORTFÓLIO</h2>
       <div class="boxFolder">
@@ -108,7 +109,25 @@
       </div>
     </section>
     <!-- test Portifólio Vue -->
+  
     <section id="posts" class="container portfolio">
+      <div class="modal_post" v-if="post">
+        <header>
+          <div class="container">
+            <h3>{{post.h1}}</h3>
+            <button class="buttonsm"></button>
+          </div>
+        </header>
+        <section class="content">
+          <div v-for="item in post.content" :key="item.id">
+            <component :is="item.tag" :class="item.style" v-if="item.tag !== 'img'">{{item.info}}</component>
+            <figure v-else-if="item.tag === 'img'">
+              <img :src="item.link" :alt="item.info" />
+              <figcaption>{{item.info}}</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
       <h2>PORTFÓLIO</h2>
       <div class="boxFolder">
         <div class="headerTab">
@@ -118,15 +137,18 @@
         </div>
         <div class="folder">
           <div class="content">
-            <div v-for="post, id in posts" class="post">
+            <div
+              v-for="post, id in posts"
+              @click="fetchPost(post.id)"
+              class="post"
+              :key="post.id"
+            >
               <img :src="post.img.link" :alt="post.img.alt" />
               <div class="info_modal">
                 <img class="bg_button" src="img/hovercard.svg" alt="" />
                 <span class="button_open"></span>
                 <div class="title">
                   <h3>{{post.nome}}</h3>
-                  <img :src="post.img.link" alt="">
-                  {{post.img.link}}
                 </div>
               </div>
             </div>
@@ -134,13 +156,8 @@
         </div>
       </div>
     </section>
-    <!--  -->
 
-    <section
-      class="container experiencia"
-      id="experiencia"
-      aria-label="Experiência"
-    >
+    <section class="container experiencia" id="experiencia" aria-label="Experiência">
       <h2>Experiência</h2>
       <div>
         <p class="lg">
@@ -451,44 +468,8 @@
         <p>©2024 Gabriel Pole todos o direitos reservados.</p>
       </div>
     </footer>
-    <dialog class="modal_post">
-      <header>
-        <div class="container">
-          <h3>Coffee Menu App - Schwarzer Café</h3>
-          <button class="buttonsm"></button>
-        </div>
-      </header>
-      <section class="content">
-        <figure>
-          <img src="img/img_modal.jpg" alt="" />
-          <figcaption>font: dribble</figcaption>
-        </figure>
-        <p class="">
-          Settings page to allow users to customize their app appearance,
-          including color theme and chart layouts.
-        </p>
-        <p class="bold">❖ Made with Untitled UI and Untitled UI Icons</p>
-        <figure>
-          <img src="img/img_modal.jpg" alt="" />
-          <figcaption>font: dribble</figcaption>
-        </figure>
-        <figure>
-          <img src="img/img_modal.jpg" alt="" />
-          <figcaption>font: dribble</figcaption>
-        </figure>
-        <h4>Made with Untitled UI</h4>
-        <p class="">
-          Untitled UI is the largest Figma UI kit and design system in the
-          world. Kickstart any project, save thousands of hours, and level up as
-          a designer.
-        </p>
-        <p class="bold">❖ Preview Untitled UI in Figma here</p>
-        <p class="bold">
-          ❖ Use the discount code DRIBBBLE for 10% off at untitledui.com
-        </p>
-        <p class="bold">Untitled UI Icons</p>
-      </section>
-    </dialog>
   </body>
   <script src="js/app.js"></script>
 </html>
+
+
