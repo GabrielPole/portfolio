@@ -641,11 +641,22 @@ footer img{
   z-index: 1000;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100%;  
   height: 100vh;
   overflow-y:auto;
   background: white;
   color: var(--text-black-he);
+  animation: fadeIn .4s forwards;  
+}
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+    transform: translate3D(0, 100%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3D(0px, 0, 0);
+  }
 }
 .modal_post header{
   position: fixed;
@@ -689,12 +700,12 @@ footer img{
 .modal_post h4{
   font-size: var(--font-h4-post);
   font-weight: var(--font-weight-500);
-  margin-bottom: var(--space-12);
+  margin: var(--space-0) var(--space-24) var(--space-12) var(--space-24);
 }
 .modal_post p{
-  margin-bottom: var(--space-24);
+  margin: var(--space-0) var(--space-24) var(--space-12) var(--space-24);
   font-size: var(--font-p-post);
-  width: 80ch;
+  max-width: 80ch;
 }
 .modal_post p.bold{
   font-weight: var(--font-weight-700);

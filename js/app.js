@@ -3,7 +3,7 @@ const vm = new Vue({
     el: "#posts",
     data: {
        posts: {},
-       post: true
+       post: false
     },
     methods: {
       puxarCursos() {
@@ -24,7 +24,7 @@ const vm = new Vue({
     },
     created(){
       this.puxarCursos()
-      this.fetchPost(1)
+      this.fetchPost()
     }
   });
 
