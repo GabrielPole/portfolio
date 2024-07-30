@@ -805,6 +805,54 @@ footer img{
     content: "Ano: ";
   }
 }
+@media (max-width: 844px) {
+  :root{
+    /* == Font == */
+    --font-h1: 2.25rem;
+    --font-h3: 1.25rem;
+    --font-h4: 1.5rem;
+    --font-p-lg: 1.1rem;
+  }
+  .introducao {
+    grid:
+    "texto" auto
+    "foto" 
+    "tag " 140px;
+    gap: var(--gap-16) var(--gap-16);
+    padding-bottom: var(--space-44);
+  }
+  .introducao h1::before {
+    width: var(--space-80);
+    height: var(--space-64);
+    background: url(../img/detalhe.svg) no-repeat center;
+    background-size: 80px 70px;
+    position: absolute;
+    top: -12px;
+    left: -24px;
+    z-index: -1;
+  }
+  .introducao .photo_profile {
+    margin-left: var(--space-0);
+    width: 100%;
+    max-height: 200px;
+  }
+  
+  .introducao .infoTec h3 {
+    min-width: var(--space-104);
+  }
+  .introducao .infoTec h3::before {
+    width: var(--space-104);
+    top: var(--space-28);
+  }
+  .introducao .infoTec .figma::before,
+  .introducao .infoTec .htmlCss::before,
+  .introducao .infoTec .javaScript::before,
+  .introducao .infoTec .scrum::before,
+  .introducao .infoTec .uxUi::before{
+    background-size: 100px;
+  }
+}
+
 @media (max-width: 768px) {
   #menu {
     display: block;
