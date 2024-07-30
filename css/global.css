@@ -59,6 +59,7 @@
   --gap-0: 0rem;
   --gap-10: 0.625rem;
   --gap-16: 1rem;
+  --gap-44:  2.75rem;
   --gap-104: 6.5rem;
 
   /* == Spacing == */
@@ -192,12 +193,18 @@ img{
 }
 
 /* =========== HEADER =========== */
+.container.header{
+  gap: 10px; 
+}
 .header{
   padding: var(--space-20);
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--space-4) solid #fff;
+}
+#btn_mobile{
+  display: none;
 }
 .header img{
   width: 120px;
@@ -232,9 +239,9 @@ img{
 /* =========== Hero Area ===========*/
 .introducao{
   grid: 
-  "texto foto" 500px
+  "texto foto" 680px
   "tag   tag " 140px 
-  / 500px  auto;
+  /40%  auto;
   gap: var(--gap-0) var(--gap-16) ;
 }
 .introducao h1 {
@@ -261,8 +268,9 @@ img{
 }
 .introducao .photo_profile{
   grid-area: foto;
-  max-height: 100%;
   justify-self: center;
+  height: auto;
+  align-self: center;
   margin-left: var(--space-80);
 }
 .introducao .infoTec{
@@ -301,7 +309,6 @@ img{
 .introducao .infoTec .uxUi::before{
   background: url(../img/progress02.svg) no-repeat center center;
 }
-
 /* =========== Portifolio ===========*/
 .portfolio{
   grid-template-columns: 1fr;
@@ -423,7 +430,7 @@ img{
 .experiencia h2{
  color: var(--text-black-le);
 }
-.experiencia p{
+.experiencia .subtitulo{
   color: var(--text-black-me); 
   margin-bottom: var(--space-24);
 }
@@ -440,8 +447,6 @@ img{
 }
 .experiencia .descricao.quero_ver{
   display: block;
-  max-width: 46ch;
-  margin-bottom: var(--space-0);
   color: var(--text-black-me);
 }
 .experiencia .ver_mais{
@@ -450,7 +455,7 @@ img{
   right: var(--space-0);
   border: none;
   background: var(--bg-ibox-card);
-  color: var(--text-black-le);
+  color: var(--green);
   cursor: pointer;
 }
 .experiencia .quero_ver .ver_mais{
@@ -465,7 +470,7 @@ img{
 .empresa{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--gap-10) var(--gap-8);
+  gap: var(--gap-10);
   padding: var(--space-16);
   background: var(--bg-ibox-card);
   margin-bottom: var(--space-20);
@@ -485,9 +490,10 @@ img{
 p.empresa_ano{
   position: absolute;
   text-align: right;
-  width: var(--space-80);
   top: var(--space-16);
-  left: -100px;
+  left: -50px;
+  max-width: 4ch;
+  width: var(--space-112);
   color: var(--text-black-me);
 }
 .empresa_titulo, .empresa_tech{
@@ -512,7 +518,6 @@ p.empresa_ano{
 }
 .formacao .subtitulo{
   color: var(--text-black-me);
-  max-width: 4ch;
 }
 .formacao_texto{
   color: var(--text-black-le);
@@ -521,19 +526,20 @@ p.empresa_ano{
 .formacao_texto strong{
   color: var(--text-white-he);
 }
+.university_list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-16);
+  margin-bottom: var(--space-24);
+ }
 .university{
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width: 162px;
   background: black;
   padding: var(--space-20);
   border-radius: var(--space-radio-4);
- }
-.university_list{
-  display: flex;
-  flex-wrap: nowrap;
-  gap: var(--gap-16);
-  margin-bottom: var(--space-24);
  }
 .university_type{
   text-transform: uppercase;
@@ -571,8 +577,6 @@ p.empresa_ano{
   position: absolute;
   left: -36px;
   top: var(--space-4);
- }
- .skills .cursos h4::before{
   background: url(../img/cursos.svg) no-repeat  center;
  }
  .skills .idiomas h4::before{
@@ -585,13 +589,13 @@ p.empresa_ano{
  .skills span{
    color:var(--text-black-me);
  }
-
 /* =========== Contato ===========*/
 footer{
   margin: var(--space-0) var(--space-20);
 }
 .contact{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content:space-around;
   background: var(--green);
@@ -633,7 +637,6 @@ footer .copyright{
 footer img{
   width: 120px;
 }
-
 /* =========== Modal ===========*/
 .modal_post {
   position: fixed;
@@ -658,12 +661,12 @@ footer img{
   }
 }
 .modal_post header {
-  position: sticky; /* Use position: fixed se preferir */
+  position: sticky; 
   top: 0px;
   background: var(--white);
   width: 100%;
   border-bottom: 1px solid var(--line-grey);
-  z-index: 1001; /* Garante que o header fique acima de outros elementos */
+  z-index: 1001; 
 }
 .modal_post .container{
   display: flex;
@@ -712,30 +715,150 @@ footer img{
 .modal_post p.bold{
   font-weight: var(--font-weight-700);
 }
-
 /* =========== Responsividade ===========*/
 @media screen and (max-width: 1270px){
-  body{
-    background: #212220;
+  :root{
+    --font-h2: 6rem;
+    --font-h3: 1.75rem;
+  }
+  h2{
+    max-width: none;
+  }
+  .container.header{
+    margin: var(--space-0) var(--space-32);
+  }
+  .container .introducao{
+    align-items: center;
   }
   .introducao{
-    gap: var(--gap-16) var(--gap-16) ;
-    padding-bottom: 80px;
+    grid: 
+    "texto foto" 400px
+    "tag   tag " 140px 
+    /50%  auto;
+    gap: var(--gap-16) var(--gap-16);
+    padding-bottom: var(--space-44);
   }
   .introducao .photo_profile{
     margin-left: var(--space-16);
   }
+  .introducao .infoTec  h3::before{
+    left: var(--space-0);
+    top: var(--space-40);
+  }
   #experiencia{
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: var(--gap-10);
     margin: var(--space-0) var(--space-20);
   }
-  #experiencia h2 {   
+  .experiencia h2 {   
     margin-left: var(--space-56);
-    max-width:none;
   }
   #experiencia div {
     padding-left: var(--space-64);
   }
-
+  .container.formacao{
+    grid-template-columns: 1fr;
+    gap: var(--gap-10);
+  }
+  .formacao_texto {
+    max-width: 900px;
+  }
+   .formacao .skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-44);
+   }
+   .skills h4{
+    margin-left: var(--space-36);
+    }
+    .faculdade_curso{
+      min-height: var(--space-48);
+    } 
+}
+@media screen and (max-width: 1026px){
+  :root{
+    --font-h2: 4rem;
+    --font-p-lg: 1.25rem;
+  }
+  #experiencia div {
+    padding-left: inherit;
+  }
+  .experiencia h2 {
+    margin-left: var(--space-20);
+  }
+  .empresa {
+    grid-template-columns: 1fr;
+    gap: var(--gap-0);
+  }
+  .experiencia .descricao{
+    max-width: max-content;
+  }
+  p.empresa_ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    max-width: initial;
+    text-align: left;
+    margin-top: var(--space-8);
+  } 
+  p.empresa_ano::before{
+    content: "Ano: ";
+  }
+}
+@media (max-width: 768px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 150px;
+    top: 102px;
+    right: 80px;
+    background: white;
+    transition: 0.2s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    visibility: visible;
+  }
+  #menu a {
+    padding: 1rem;
+    border-bottom: 2px solid var(--line-grey);
+    color: var(--text-black-he);
+  }
+  #btn_mobile {
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+  #hamburger {
+    width: var(--space-28);
+    border-top: 2px solid;
+    color: #00A2A6;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    color: #00A2A6;
+    width: var(--space-28);
+    height: 2px;
+    background: currentColor;
+    margin-top: var(--space-8);
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -10px;
+  }
 }

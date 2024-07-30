@@ -48,4 +48,42 @@ const vm = new Vue({
    });
  });
 
- 
+//botão menu
+const btnMobile = document.getElementById('btn_mobile');
+const nav = document.getElementById('nav');
+const menuItems = nav.querySelectorAll('ul li');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+    document.addEventListener('click', closeMenuOnClickOutside);
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+    document.removeEventListener('click', closeMenuOnClickOutside);
+  }
+}
+
+function closeMenuOnClickOutside(event) {
+  if (!nav.contains(event.target) && !btnMobile.contains(event.target)) {
+    closeMenu();
+  }
+}
+
+function closeMenu() {
+  nav.classList.remove('active');
+  btnMobile.setAttribute('aria-expanded', 'false');
+  btnMobile.setAttribute('aria-label', 'Abrir Menu');
+  document.removeEventListener('click', closeMenuOnClickOutside);
+}
+
+function handleMenuItemClick(event) {
+  closeMenu();
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+menuItems.forEach(item => item.addEventListener('click', handleMenuItemClick));
