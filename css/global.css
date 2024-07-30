@@ -267,11 +267,11 @@ img{
 }
 .introducao .infoTec{
   grid-area: tag;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-64) var(--space-28);
+  justify-content: center;
   align-self: center;
-  margin-bottom: var(--space-20);
 }
 .introducao .infoTec  h3{
   position: relative;
@@ -412,7 +412,6 @@ img{
   opacity: 1;
   pointer-events: all;
 } 
-
 /* =========== Experence ===========*/
 .experiencia{
   border-radius: var(--space-radio-14);
@@ -457,7 +456,6 @@ img{
 .experiencia .quero_ver .ver_mais{
   display: none;
 }
-
 .experiencia .ver_mais:hover{
   color: var(--green);
 }
@@ -508,7 +506,6 @@ p.empresa_ano{
   background: var(--bg-ibox);
   padding: var(--space-4) var(--space-12);
 }
-
 /* =========== Formação ===========*/
 .formacao{
   padding-top: var(--space-64);
@@ -588,9 +585,11 @@ p.empresa_ano{
  .skills span{
    color:var(--text-black-me);
  }
- 
 
 /* =========== Contato ===========*/
+footer{
+  margin: var(--space-0) var(--space-20);
+}
 .contact{
   display: flex;
   align-items: center;
@@ -671,6 +670,7 @@ footer img{
   justify-content: space-between;
   align-self: center;
   padding: var(--space-16);
+  margin: var(--space-0) auto;
 }
 .modal_post header button{
   padding: 20px 24px;
@@ -683,8 +683,8 @@ footer img{
 .modal_post .content{
   max-width: 1200px;
   height: fit-content;
-  margin: var(--space-32) auto;
-  padding: var(--space-0) var(--space-16);
+  margin: var(--space-0) auto;
+  padding: var(--space-32) var(--space-16);
 }
 .modal_post figure{
  margin: var(--space-0) var(--space-0) var(--space-32) var(--space-0);
@@ -711,4 +711,31 @@ footer img{
 }
 .modal_post p.bold{
   font-weight: var(--font-weight-700);
+}
+
+/* =========== Responsividade ===========*/
+@media screen and (max-width: 1270px){
+  body{
+    background: #212220;
+  }
+  .introducao{
+    gap: var(--gap-16) var(--gap-16) ;
+    padding-bottom: 80px;
+  }
+  .introducao .photo_profile{
+    margin-left: var(--space-16);
+  }
+  #experiencia{
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: var(--space-0) var(--space-20);
+  }
+  #experiencia h2 {   
+    margin-left: var(--space-56);
+    max-width:none;
+  }
+  #experiencia div {
+    padding-left: var(--space-64);
+  }
+
 }
