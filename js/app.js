@@ -24,7 +24,7 @@ const vm = new Vue({
       router(){
         const hash = document.location.hash;
         if(hash){
-          this.fetchPost(hash.replace("#",""))
+          this.fetchPost(hash.replace("#post",""))
         }
       }
     },
@@ -32,7 +32,7 @@ const vm = new Vue({
       post(){
         document.title = this.post.h1 || "G.Pole"
         const hash = this.post.id || ""
-        history.pushState(null, null, `#${hash}`)
+        history.pushState(null, null, `#post${hash}`)
       }
     },
     created(){
