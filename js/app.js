@@ -11,7 +11,6 @@ const vm = new Vue({
          .then(r => r.json())
          .then(r => {
            this.posts = r;
-           console.log(r)
         })
       },
       fetchPost(id){
