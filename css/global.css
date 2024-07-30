@@ -683,7 +683,7 @@ footer img{
 .modal_post .content{
   max-width: 1200px;
   height: fit-content;
-  margin: var(--space-104) auto;
+  margin: var(--space-32) auto;
   padding: var(--space-0) var(--space-16);
 }
 .modal_post figure{

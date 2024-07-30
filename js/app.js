@@ -1,6 +1,6 @@
 // Portifólio Vue
 const vm = new Vue({
-    el: "#posts",
+    el: "#portifolio",
     data: {
        posts: {},
        post: false
@@ -20,9 +20,23 @@ const vm = new Vue({
          .then(r =>{
            this.post = r
          })
-      } 
+      },
+      router(){
+        const hash = document.location.hash;
+        if(hash){
+          this.fetchPost(hash.replace("#",""))
+        }
+      }
+    },
+    watch:{
+      post(){
+        document.title = this.post.h1 || "G.Pole"
+        const hash = this.post.id || ""
+        history.pushState(null, null, `#${hash}`)
+      }
     },
     created(){
+      this.router()
       this.puxarCursos()
       this.fetchPost()
     }
