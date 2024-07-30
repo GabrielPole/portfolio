@@ -5,6 +5,7 @@
 :root{
   /* == Colors == */
   --bg-page: #161616;
+  --bg-dark: #222222;
   --bg-ibox: #fff;
   --bg-ibox-card: #f5f5f5;
   --line-grey: #f3f3f4;
@@ -598,11 +599,15 @@ footer{
   flex-wrap: wrap;
   align-items: center;
   justify-content:space-around;
-  background: var(--green);
+  background: var(--bg-dark);
   border-radius: var(--space-radio-14);
+  gap: var(--gap-16);
+}
+.contact ul{
+  text-align: center;
 }
 .contact a{
-  display: block;
+  display: inline-block;
   position: relative;
   font-size: var(--font-h5);
   color: var(--text-white-he);
@@ -816,27 +821,22 @@ footer img{
   .introducao {
     grid:
     "texto" auto
-    "foto" 
-    "tag " 140px;
+    "foto" auto
+    "tag " auto;
     gap: var(--gap-16) var(--gap-16);
     padding-bottom: var(--space-44);
+  }
+  .introducao .photo_profile{
+    object-fit: contain;
+    height: 100%;
   }
   .introducao h1::before {
     width: var(--space-80);
     height: var(--space-64);
-    background: url(../img/detalhe.svg) no-repeat center;
     background-size: 80px 70px;
-    position: absolute;
     top: -12px;
     left: -24px;
-    z-index: -1;
   }
-  .introducao .photo_profile {
-    margin-left: var(--space-0);
-    width: 100%;
-    max-height: 200px;
-  }
-  
   .introducao .infoTec h3 {
     min-width: var(--space-104);
   }
@@ -850,6 +850,12 @@ footer img{
   .introducao .infoTec .scrum::before,
   .introducao .infoTec .uxUi::before{
     background-size: 100px;
+  }
+  .portfolio h2 {
+    margin-bottom: var(--space-0);
+  }
+  .contact h3{
+    font-size: var(--font-h1)
   }
 }
 
