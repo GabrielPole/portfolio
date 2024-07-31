@@ -869,6 +869,9 @@ footer img{
   .formacao .subtitulo, .experiencia h2{
     font-size: 4rem;
   }
+  .formacao {
+    padding-top: var(--space-40);
+  }
 }
 
 @media (max-width: 768px) {
@@ -947,7 +950,10 @@ footer img{
 }
 @media (max-width: 440px){
   :root{
-    
+    --font-p-lg: 1rem;
+  }
+  body{
+    margin: var(--space-8);
   }
   .portfolio h2{
     margin-bottom: -32px;
@@ -958,6 +964,10 @@ footer img{
     grid-auto-rows: 200px;
   }
   .formacao .subtitulo, .experiencia h2 {
-    font-size: 2rem; 
+    font-size: 2.5rem; 
+  }
+  .contact h3 {
+    font-size: var(--font-h4);
+    text-align: center;
   }
 }
