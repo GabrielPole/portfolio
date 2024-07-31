@@ -317,14 +317,14 @@ img{
 }
 .portfolio h2{
   max-width: none;
-  margin-bottom: -60px;
+  margin-bottom: -68px;
   color: var(--text-white-le);
 }
 .portfolio .headerTab{
   display: grid;
   grid-auto-flow: column;
   justify-content: end;
-  gap: var(--gap-16);
+  /* gap: var(--gap-16); */
 }
 .portfolio .headerTab h3{
   color: var(--text-black-he);
@@ -332,17 +332,24 @@ img{
   border-radius: var(--space-radio-40) var(--space-radio-14) var(--space-0) var(--space-0);
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;;
 }
-.portfolio .headerTab .active{
-  box-shadow: none;
+.portfolio .headerTab .app{
+  background: #B89FD5;
+  margin-right: -20px;
+  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
 }
 .portfolio .headerTab .abaBranding{
   background: var(--green-2);
+  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
+  margin-right: -30px;
 }
 .portfolio .headerTab .abaWeb{
   background: var(--orange);
+  margin-right: -30px;
+  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
 }
 .portfolio .headerTab .abaApps{
   background: var(--ivory);
+  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
 }
 .portfolio .folder{
   max-width: 100%;
@@ -627,15 +634,17 @@ footer{
   background: url(../img/email.svg) no-repeat center center;
 }
 .contact .numb::before{
-  background: url(../img//whatsapp.svg) no-repeat center center;
+  background: url(../img/whatsapp.svg) no-repeat center center;
 }
 .contact .link::before{
-  background: url(/img/link.svg) no-repeat center center;
+  background: url(../img/link.svg) no-repeat center center;
 }
 
 /* =========== Footer ===========*/
 footer .copyright{
  display: flex;
+ flex-wrap: wrap;
+ gap: var(--gap-16);
  justify-content: space-between;
  color: var(--text-black-me);
 }
@@ -722,10 +731,6 @@ footer img{
 }
 /* =========== Responsividade ===========*/
 @media screen and (max-width: 1270px){
-  :root{
-    --font-h2: 6rem;
-    --font-h3: 1.75rem;
-  }
   h2{
     max-width: none;
   }
@@ -758,7 +763,7 @@ footer img{
   .experiencia h2 {   
     margin-left: var(--space-56);
   }
-  #experiencia div {
+  .experiencia .cards {
     padding-left: var(--space-64);
   }
   .container.formacao{
@@ -782,14 +787,20 @@ footer img{
 }
 @media screen and (max-width: 1026px){
   :root{
-    --font-h2: 4rem;
+    --font-h2: 6rem;
     --font-p-lg: 1.25rem;
   }
-  #experiencia div {
-    padding-left: inherit;
+  .portfolio h2{
+    margin-bottom: -44px;
+  }
+  .portfolio .headerTab h3{
+    font-size: var(--font-h5);
+  }
+  .experiencia .cards {
+    padding-left: var(--space-0);
   }
   .experiencia h2 {
-    margin-left: var(--space-20);
+    margin-left: var(--space-0);
   }
   .empresa {
     grid-template-columns: 1fr;
@@ -851,11 +862,12 @@ footer img{
   .introducao .infoTec .uxUi::before{
     background-size: 100px;
   }
-  .portfolio h2 {
-    margin-bottom: var(--space-0);
-  }
   .contact h3{
-    font-size: var(--font-h1)
+    font-size: var(--font-h1);
+    text-align: center;
+  }
+  .formacao .subtitulo, .experiencia h2{
+    font-size: 4rem;
   }
 }
 
@@ -914,5 +926,38 @@ footer img{
   #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -10px;
+  }
+}
+@media (max-width: 600px){
+  .portfolio h2{
+    font-size: 3em;
+    margin-bottom: -30px;
+  }
+  .formacao .subtitulo, .experiencia h2 {
+    font-size: 3rem; 
+  }
+  .portfolio .headerTab h3{
+    font-size: var(--font-h6);
+  }
+  .portfolio .headerTab h3 {
+    padding: var(--space-8) var(--space-16) var(--space-4) var(--space-16);
+    border-radius: var(--space-radio-14) var(--space-radio-4) var(--space-0) var(--space-0);
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+}
+@media (max-width: 440px){
+  :root{
+    
+  }
+  .portfolio h2{
+    margin-bottom: -32px;
+  }
+  .portfolio .folder .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-auto-rows: 200px;
+  }
+  .formacao .subtitulo, .experiencia h2 {
+    font-size: 2rem; 
   }
 }
