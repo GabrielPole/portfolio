@@ -1,3 +1,4 @@
+// Só o básico para fazer funcionar ;)
 const vm = new Vue({
   el: "#portifolio",
   data: {
@@ -41,7 +42,7 @@ const vm = new Vue({
   }
 });
 
-// Ver mais experiência
+// ver mais experiência
 document.querySelectorAll(".ver_mais").forEach(function(botao) {
   botao.addEventListener("click", function() {
     this.parentElement.classList.add("quero_ver");
@@ -91,4 +92,4 @@ if (btnMobile && nav) {
   menuItems.forEach(item => item.addEventListener('click', handleMenuItemClick));
 }
 
-console.log("Opa! Tudo certo? Utilizei Vue em dev para agilizar o desenvolvimento, mas já estou trabalhando na configuração do CLI em Next.js para continuar a evolução da aplicação.")
+console.log("Opa! Tudo certo? Utilizei Vue em dev para agilizar o desenvolvimento, mas já estou trabalhando na configuração do CLI em Next.js para continuar a evolução da aplicação. Por isso, não otimizarei tanto por aqui.")
