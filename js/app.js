@@ -90,3 +90,5 @@ if (btnMobile && nav) {
   btnMobile.addEventListener('touchstart', toggleMenu);
   menuItems.forEach(item => item.addEventListener('click', handleMenuItemClick));
 }
+
+console.log("Opa! Tudo certo? Utilizei Vue em dev para agilizar o desenvolvimento, mas já estou trabalhando na configuração do CLI em Next.js para continuar a evolução da aplicação.")
