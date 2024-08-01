@@ -686,12 +686,12 @@ footer img{
 .modal_post .container{
   display: flex;
   justify-content: space-between;
-  align-self: center;
-  padding: var(--space-16);
+  align-items: center;
+  padding: var(--space-16) var(--space-32);
   margin: var(--space-0) auto;
 }
 .modal_post header button{
-  padding: 20px 24px;
+  padding: var(--space-20);
   border: none;
   background: url(../img/undo.svg) center no-repeat;
   background-color: var(--bg-ibox-card);
