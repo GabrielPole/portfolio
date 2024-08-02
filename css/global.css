@@ -1020,7 +1020,8 @@ footer img{
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);
   }
   .modal_post .header_text h3{
-    font-size: 1.75rem
+    font-size: 1.75rem;
+    line-height: (--line-height-100);
   }
   .modal_post p{
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);
