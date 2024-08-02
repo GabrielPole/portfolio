@@ -992,8 +992,11 @@ footer img{
   }
   .portfolio .folder .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     grid-auto-rows: 200px;
+  }
+  .portfolio .content .post .title{
+    height: 200px;
   }
   .formacao .subtitulo, .experiencia h2 {
     font-size: 2.5rem; 
@@ -1004,4 +1007,5 @@ footer img{
   }
   .modal_post p{
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);
+}
 }
