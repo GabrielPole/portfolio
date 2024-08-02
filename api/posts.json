@@ -2,6 +2,7 @@
   {
     "id": 0,
     "nome": "Sibyl vane",
+    "ano": 2024,
     "tip": "1",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
@@ -11,6 +12,7 @@
   {
     "id": 1,
     "nome": "Gail Altenwertht",
+    "ano": 2024,
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
       "alt":  "Descrição da img"
@@ -19,6 +21,7 @@
   {
     "id": 2,
     "nome": "UnLIMITED PRETENTIOUS IDEIAS",
+    "ano": 2024,
     "tip": "1",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
@@ -28,6 +31,7 @@
   {
     "id": 3,
     "nome": "Personality",
+    "ano": 2024,
     "tip": "1",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
@@ -37,6 +41,7 @@
   {
     "id": 4,
     "nome": "Create your Own",
+    "ano": 2024,
     "tip": "2",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
@@ -46,6 +51,7 @@
   {
     "id": 5,
     "nome": "DESIGN SERVICES TO HEALP YOUR BRAND SHINE",
+    "ano": 2024,
     "tip": "0",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
@@ -55,6 +61,7 @@
   {
     "id": 6,
     "nome": "NFT Dream Gallery",
+    "ano": 2024,
     "tip": "1",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
@@ -64,6 +71,7 @@
   {
     "id": 7,
     "nome": "John Doe",
+    "ano": 2024,
     "tip": "0",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
@@ -73,6 +81,7 @@
   {
     "id": 8,
     "nome": "Building your Brand In Figital World",
+    "ano": 2024,
     "tip": "0",
     "img":{
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
