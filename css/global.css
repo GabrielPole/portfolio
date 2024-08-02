@@ -1006,6 +1006,9 @@ footer img{
   .portfolio .content .post .title{
     height: 200px;
   }
+  .portfolio .content .info_modal {
+    height: 200px;
+  }
   .formacao .subtitulo, .experiencia h2 {
     font-size: 2.5rem; 
   }
@@ -1022,5 +1025,5 @@ footer img{
   .modal_post p.li {
     margin-bottom: var(--space-4);
     margin-left: var(--space-32);
-}
+  }
 }
