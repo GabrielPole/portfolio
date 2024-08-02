@@ -16,45 +16,33 @@
     },
     {
       "tag": "p",
-      "style": "",
+      "style": "li",
       "link": "",
-      "info": "- Criar um portfólio único sem usar templates;"
+      "info": "⦿ Criar um portfólio único sem usar templates;"
     },
     {
       "tag": "p",
       "style": "li",
       "link": "",
-      "info": "- Que não precise de login para visualizar ou tenha limite de postagem, como, por exemplo, no Dribbble;"
+      "info": "⦿ Que não precise de login para visualizar ou tenha limite de postagem, como, por exemplo, no Dribbble;"
     },
     {
       "tag": "p",
       "style": "li",
       "link": "",
-      "info": "- Que não precise de login para visualizar ou tenha limite de postagem, como, por exemplo, no Dribbble; - Carregamento rápido;<br> - Que escrevesse em formato de blog, sem precisar parar e organizar toda uma estrutura como, por exemplo, o Uxfolio;<br>- Desenvolvimento da aplicação sem gastar com hospedagem nesse primeiro momento, que possa ser escalável;"
+      "info": "⦿ Carregamento rápido;"
     },
     {
       "tag": "p",
       "style": "li",
       "link": "",
-      "info": "Carregamento rápido; - Que escrevesse em formato de blog, sem precisar parar e organizar toda uma estrutura como, por exemplo, o Uxfolio;<br>- Desenvolvimento da aplicação sem gastar com hospedagem nesse primeiro momento, que possa ser escalável;"
+      "info": "⦿ Que escrevesse em formato de blog, sem precisar parar e organizar toda uma estrutura como, por exemplo, o Uxfolio;"
     },
     {
       "tag": "p",
       "style": "li",
       "link": "",
-      "info": "- Que escrevesse em formato de blog, sem precisar parar e organizar toda uma estrutura como, por exemplo, o Uxfolio;<br>- Desenvolvimento da aplicação sem gastar com hospedagem nesse primeiro momento, que possa ser escalável;"
-    },
-    {
-      "tag": "p",
-      "style": "li",
-      "link": "",
-      "info": "- Que escrevesse em formato de blog, sem precisar parar e organizar toda uma estrutura como, por exemplo, o Uxfolio;"
-    },
-    {
-      "tag": "p",
-      "style": "li",
-      "link": "",
-      "info": "- Desenvolvimento da aplicação sem gastar com hospedagem nesse primeiro momento, que possa ser escalável;"
+      "info": "⦿ Desenvolvimento da aplicação sem gastar com hospedagem nesse primeiro momento, que possa ser escalável;"
     },
     {
       "tag": "h4",
@@ -100,7 +88,7 @@
     },
     {
       "tag": "p",
-      "style":"",
+      "style":"bold",
       "link":"",
       "info":"Postagens:"
     },

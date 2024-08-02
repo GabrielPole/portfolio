@@ -744,6 +744,10 @@ footer img{
 .modal_post p.bold{
   font-weight: var(--font-weight-700);
 }
+.modal_post p.li{
+  font-size: var(--font-p-md);
+  margin-bottom: var(--space-4);
+}
 /* =========== Responsividade ===========*/
 @media screen and (max-width: 1270px){
   h2{
@@ -998,4 +1002,6 @@ footer img{
     font-size: var(--font-h4);
     text-align: center;
   }
+  .modal_post p{
+    margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);
 }
