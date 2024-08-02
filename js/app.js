@@ -19,6 +19,7 @@ const vm = new Vue({
         .then(r => r.json())
         .then(r => {
           this.post = r;
+          console.log(r)
         })
         .catch(error => console.error("Ops! Algo deu errado 🙊", error));
     },

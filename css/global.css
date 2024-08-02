@@ -438,7 +438,10 @@ img{
   margin: var(--space-40) auto;
 }
 .experiencia h2{
- color: var(--text-black-le);
+  color: var(--text-black-le);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .experiencia .subtitulo{
   color: var(--text-black-me); 
@@ -525,9 +528,13 @@ p.empresa_ano{
 /* =========== Formação ===========*/
 .formacao{
   padding-top: var(--space-64);
+  align-items: flex-start;
 }
 .formacao .subtitulo{
   color: var(--text-black-me);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .formacao_texto{
   color: var(--text-black-le);
@@ -736,6 +743,7 @@ footer img{
 @media screen and (max-width: 1270px){
   h2{
     max-width: none;
+    
   }
   .container.header{
     margin: var(--space-0) var(--space-32);
@@ -763,8 +771,15 @@ footer img{
     gap: var(--gap-10);
     margin: var(--space-0) var(--space-20);
   }
+  .experiencia h2{
+    color: var(--text-black-le);
+   
+  }
   .experiencia h2 {   
     margin-left: var(--space-56);
+    position: initial;
+    position: initial;
+    top: none;
   }
   .experiencia .cards {
     padding-left: var(--space-64);
@@ -772,6 +787,11 @@ footer img{
   .container.formacao{
     grid-template-columns: 1fr;
     gap: var(--gap-10);
+  }
+  .formacao .subtitulo{
+    position: initial;
+    position: initial;
+    top: none;
   }
   .formacao_texto {
     max-width: 900px;
