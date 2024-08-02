@@ -1,6 +1,7 @@
 {
   "id": 0,
   "h1": "Nome do h1",
+  "ano": 2024,
   "content": [
     {
       "tag": "p",
