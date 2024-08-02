@@ -1019,6 +1019,9 @@ footer img{
   .modal_post h4 {
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);
   }
+  .modal_post .header_text h3{
+    font-size: 1.75rem
+  }
   .modal_post p{
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);
   }
