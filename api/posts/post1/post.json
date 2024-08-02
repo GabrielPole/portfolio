@@ -1,71 +1,86 @@
 {
-  "id": 0,
-  "h1": "Nome do h1",
+  "id": 1,
+  "h1": "Portfólio",
   "ano": 2024,
   "content": [
     {
       "tag": "p",
       "style": "bold",
-      "info": "Hey dribbblers!"
-    },
-    {
-      "tag": "p",
-      "style": "",
-      "info": "We are happy to share the UI/UX dashboard design for our cutting-edge financial web application concept, Safe Vaults Crypto Platform. The Safe Vaults Web3 app is a blockchain-based staking platform that allows users to earn high-yield rewards without having to purchase their own tokens. By combining a simple rebase staking protocol with a prediction market platform, Vault Pass allows users to generate passive income from their digital assets."
+      "info": "Olá, vou descrever um pouco sobre o processo de criação do portfólio!"
     },
     {
       "tag": "h4",
       "style": "",
       "link": "",
-      "info": "Have a Project in Mind?"
+      "info": "Desafios"
     },
     {
       "tag": "p",
       "style": "bold",
       "link": "",
-      "info": "Book a Discovery Call on Calendly"
-    },
-    {
-      "tag": "img",
-      "style": "",
-      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/img01.png",
-      "info": "font: Dribble - Extej UI UX Design Agency"
-    },
-    {
-      "tag": "img",
-      "style": "",
-      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/img02.png",
-      "info": "font: Dribble - Extej UI UX Design Agency"
+      "info": "- Criar um portfólio único sem usar templates; <br> - Que não precise de login para visualizar ou tenha limite de postagem, como, por exemplo, no Dribbble <br> - Carregamento rápido;<br> - Que escrevesse em formato de blog, sem precisar parar e organizar toda uma estrutura como, por exemplo, o Uxfolio;<br>- Desenvolvimento da aplicação sem gastar com hospedagem nesse primeiro momento, que possa ser escalável;"
     },
     {
       "tag": "h4",
       "style": "",
       "link": "",
-      "info": "Have a Project in Mind?"
+      "info": "Protótipo"
+    },
+    {
+      "tag": "p",
+      "style":"bold",
+      "link":"",
+      "info":"Discovery e Benchmark:"
     },
     {
       "tag": "p",
       "style":"",
       "link":"",
-      "info":"Be sure to follow the @Extej team for regular updates. Do you have a project you’d like to collaborate on? You can also buy this template. Feel free to contact us by: Email or Telegram"
+      "info":"O processo aconteceu também durante a construção de outros projetos, quando eu gostava de algo, eu realizava uma captura de tela e colava no arquivo do Figma ou salvava o link para acessar depois, e, realizar posteriormente o próprio Discovery e Benchmark do projeto aproveitando tudo que já tinha guardado."
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/img01.png",
+      "info": "font: Discovery — Autoria própria"
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Codificação"
+    },
+    {
+      "tag": "p",
+      "style":"bold",
+      "link":"",
+      "info":"HTML & CSS:"
     },
     {
       "tag": "p",
       "style":"",
       "link":"",
-      "info":"You can also buy this template. Feel free to contact us by: Email or Telegram"
+      "info":"Nessa parte, tive que separar um mês do ano para reservar 2 horas todos os dias da semana para avançar gradualmente, com a meta de construir em 30 dias. Devido à minha vivência na criação de websites institucionais, no início, foi bastante padronização e sempre procurei aprimorar o código HTML e CSS dentro do tempo disponível."
     },
     {
       "tag": "p",
       "style":"",
       "link":"",
-      "info":"Dribbble | Instagram | Behance | Facebook"
+      "info":"Postagens:"
     },
     {
       "tag": "p",
       "style":"",
       "link":"",
-      "info":"We are always open and available for new projects!Your feedback is very appreciated! <br> Don't be greedy and press 'L' or ❤️ if love it"
+      "info":"Precisava compreender como poderia criar cada post dentro do portfólio sem precisar de uma estrutura muito robusta. Após conversar com algumas pessoas no local de trabalho, decidi usar o Vue JS no lugar do CMS do WordPress. 'Sempre gostei mais do JS, rs' Como já havia estudado a tecnologia, a curva de aplicação foi menor. Inicialmente, decidi hospedar no Git, pois é acessível e simples de criar uma API em Json para cada postagem."
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/img02.png",
+      "info": "font: Código-fonte — autoria própria."
     }
   ]
 }
+
+
