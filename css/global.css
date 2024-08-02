@@ -1015,6 +1015,9 @@ footer img{
   .contact h3 {
     font-size: var(--font-h4);
     text-align: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
   }
   .modal_post h4 {
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);

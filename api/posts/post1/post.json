@@ -103,6 +103,12 @@
       "style": "",
       "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/img02.png",
       "info": "font: Código-fonte — autoria própria."
+    },
+    {
+      "tag": "p",
+      "style":"bold",
+      "link":"",
+      "info":"Até logo..."
     }
   ]
 }
