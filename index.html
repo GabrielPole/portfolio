@@ -65,8 +65,10 @@
       <div class="modal_post" v-if="post">
         <header>
           <div class="container">
-            <h3>{{post.h1}}</h3>
-            <h5>{{post.ano}}</h5>
+            <div class="header_text">
+              <h3>{{post.h1}}</h3>
+              <h6>{{post.ano}}</h6>
+            </div>
             <button @click="post = false" class="buttonsm"></button>
           </div>
         </header>

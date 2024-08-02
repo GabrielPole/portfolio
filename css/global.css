@@ -699,6 +699,11 @@ footer img{
   padding: var(--space-16) var(--space-32);
   margin: var(--space-0) auto;
 }
+.portfolio .modal_post .header_text h6{
+  margin-top: -8px;
+  color: var(--text-black-me);
+  font-weight: var(--font-weight-400);
+}
 .modal_post header button{
   padding: var(--space-20);
   border: none;
