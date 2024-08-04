@@ -332,26 +332,23 @@ img{
   color: var(--text-black-he);
   padding: var(--space-12) var(--space-24) var(--space-4) var(--space-24);
   border-radius: var(--space-radio-40) var(--space-radio-14) var(--space-0) var(--space-0);
-  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;;
+  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24)
 }
+
 .portfolio .headerTab .app{
   background: #B89FD5;
   margin-right: -20px;
-  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
 }
 .portfolio .headerTab .abaBranding{
   background: var(--green-2);
-  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
   margin-right: -30px;
 }
 .portfolio .headerTab .abaWeb{
   background: var(--orange);
   margin-right: -30px;
-  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
 }
 .portfolio .headerTab .abaApps{
   background: var(--ivory);
-  box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24);
 }
 .portfolio .folder{
   max-width: 100%;
