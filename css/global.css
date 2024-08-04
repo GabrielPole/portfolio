@@ -326,7 +326,6 @@ img{
   display: grid;
   grid-auto-flow: column;
   justify-content: end;
-  /* gap: var(--gap-16); */
 }
 .portfolio .headerTab h3{
   color: var(--text-black-he);
@@ -334,21 +333,31 @@ img{
   border-radius: var(--space-radio-40) var(--space-radio-14) var(--space-0) var(--space-0);
   box-shadow: -8px -10px 6px 0px rgba(0, 0, 0, 0.24)
 }
-
 .portfolio .headerTab .app{
   background: #B89FD5;
-  margin-right: -20px;
+  margin-right: -10px;
 }
+
 .portfolio .headerTab .abaBranding{
   background: var(--green-2);
-  margin-right: -30px;
+  margin-right: -20px;
 }
 .portfolio .headerTab .abaWeb{
   background: var(--orange);
-  margin-right: -30px;
+  margin-right: -20px;
 }
-.portfolio .headerTab .abaApps{
+.portfolio .headerTab .all{
   background: var(--ivory);
+}
+.portfolio .headerTab li{
+  position: relative;
+}
+.portfolio .headerTab .active .app,
+.portfolio .headerTab .active .abaBranding,
+.portfolio .headerTab .active .all,
+.portfolio .headerTab .active .abaWeb{
+  z-index: 10;
+  position: inherit;
 }
 .portfolio .folder{
   max-width: 100%;
@@ -366,7 +375,7 @@ img{
   width: 100%;
   padding: var(--space-8);
   border-radius:var(--space-radio-4);
-  background: #B78E46;
+  background: var(--bg-overlay);
   overflow-y: auto;
 }
 .portfolio .content .post{

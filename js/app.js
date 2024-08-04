@@ -4,7 +4,8 @@ const vm = new Vue({
   data: {
     posts: {},
     post: false,
-    activeIndex: null
+    activeIndex: null,
+    folder: ["all", "abaWeb", "abaBranding", "app"]
   },
   methods: {
     puxarCursos(valor) {
@@ -16,6 +17,7 @@ const vm = new Vue({
             this.activeIndex = valor;
           }else{
             this.posts = r;
+            this.activeIndex = 0;
           }
         })
         .catch(error => console.error("Ops! Algo deu errado 🙈", error));

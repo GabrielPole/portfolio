@@ -95,10 +95,10 @@
             <h3 class="abaWeb">Web</h3>
           </li>
           <li :class="{ active: activeIndex === 0 }" @click="puxarCursos(0)">
-            <h3 class="abaApps">Todos</h3>
+            <h3 class="all">Todos</h3>
           </li>
         </ul>
-        <div class="folder">
+        <div class="folder" :class="colorFolder()">
           <div class="content">
             <div
               v-for="post, id in posts"
