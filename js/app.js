@@ -4,8 +4,7 @@ const vm = new Vue({
   data: {
     posts: {},
     post: false,
-    activeIndex: null,
-    folder: ["all", "abaWeb", "abaBranding", "app"]
+    activeIndex: null
   },
   methods: {
     puxarCursos(valor) {
