@@ -1,71 +1,53 @@
 {
   "id": 2,
-  "h1": "Lorem ipsum dolor",
-  "ano": 2024,
+  "h1": "Previsão do Tempo",
+  "ano": 2022,
   "content": [
     {
-      "tag": "p",
-      "style": "bold",
-      "info": "Hey dribbblers!"
-    },
-    {
-      "tag": "p",
+      "tag": "img",
       "style": "",
-      "info": "We are happy to share the UI/UX dashboard design for our cutting-edge financial web application concept, Safe Vaults Crypto Platform. The Safe Vaults Web3 app is a blockchain-based staking platform that allows users to earn high-yield rewards without having to purchase their own tokens. By combining a simple rebase staking protocol with a prediction market platform, Vault Pass allows users to generate passive income from their digital assets."
-    },
-    {
-      "tag": "h4",
-      "style": "",
-      "link": "",
-      "info": "Have a Project in Mind?"
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post2/img02.png",
+      "info": "font: Autoria Própria."
     },
     {
       "tag": "p",
       "style": "bold",
+      "info": "Dor:"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "info": "O design do aplicativo de tempo é uma melhoria introduzida em um aplicativo de venda de grão existente. Após um ano e meio de uso do aplicativo, os usuários tiveram a impressão de que, se tivessem acesso à previsão do tempo, seria possível determinar o melhor dia para comercializar ou transportar os grãos. Isso se dá porque o grão tem umidade e essa quantidade de água interfere na passagem."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
       "link": "",
-      "info": "Book a Discovery Call on Calendly"
+      "info": "Solução:"
     },
     {
-      "tag": "img",
-      "style": "",
-      "link": "./api/postes/post1/img01.png",
-      "info": "font: Dribble - Extej UI UX Design Agency"
-    },
-    {
-      "tag": "img",
-      "style": "",
-      "link": "./api/postes/post1/img02.png",
-      "info": "font: Dribble - Extej UI UX Design Agency"
-    },
-    {
-      "tag": "h4",
-      "style": "",
+      "tag": "p",
+      "style": "li",
       "link": "",
-      "info": "Have a Project in Mind?"
+      "info": "A interface é simples e limpa, facilitando a localização das informações relevantes. O uso do espaço é bem distribuído, evitando sobrecarga para o usuário com informações excessivas."
     },
     {
       "tag": "p",
-      "style":"",
-      "link":"",
-      "info":"Be sure to follow the @Extej team for regular updates. Do you have a project you’d like to collaborate on? You can also buy this template. Feel free to contact us by: Email or Telegram"
+      "style": "li",
+      "link": "",
+      "info": "O uso de ícones para representar diferentes condições climáticas (sol, nuvens e chuva) torna-se intuitivo e de fácil compreensão. As cores também são usadas para diferenciar os tipos de clima e destacar as notificações relevantes."
     },
     {
       "tag": "p",
-      "style":"",
-      "link":"",
-      "info":"You can also buy this template. Feel free to contact us by: Email or Telegram"
+      "style": "li",
+      "link": "",
+      "info": "A barra de pesquisa para encontrar outras cidades está localizada no topo, o que é facilmente acessível. Isso promove uma melhoria na navegação e na experiência do usuário."
     },
     {
       "tag": "p",
-      "style":"",
-      "link":"",
-      "info":"Dribbble | Instagram | Behance | Facebook"
-    },
-    {
-      "tag": "p",
-      "style":"",
-      "link":"",
-      "info":"We are always open and available for new projects!Your feedback is very appreciated! <br> Don't be greedy and press 'L' or ❤️ if love it"
+      "style": "li",
+      "link": "",
+      "info": "A semana completa está disponível em forma de carrossel para facilitar o acesso aos próximos dias e, consequentemente, otimizar o planejamento de vendas ou estoque."
     }
   ]
 }
