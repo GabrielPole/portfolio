@@ -700,7 +700,6 @@ footer img{
   margin: var(--space-0) auto;
 }
 .portfolio .modal_post .header_text h6{
-  margin-top: -8px;
   color: var(--text-black-me);
   font-weight: var(--font-weight-400);
 }
@@ -835,6 +834,7 @@ footer img{
   }
   .portfolio .headerTab h3{
     font-size: var(--font-h5);
+    border-radius: var(--space-radio-14) var(--space-radio-4) var(--space-0) var(--space-0);
   }
   .experiencia .cards {
     padding-left: var(--space-0);
@@ -984,7 +984,6 @@ footer img{
   }
   .portfolio .headerTab h3 {
     padding: var(--space-8) var(--space-16) var(--space-4) var(--space-16);
-    border-radius: var(--space-radio-14) var(--space-radio-4) var(--space-0) var(--space-0);
     box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   }
 }
@@ -1021,10 +1020,6 @@ footer img{
   }
   .modal_post h4 {
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);
-  }
-  .modal_post .header_text h3{
-    font-size: 1.75rem;
-    line-height: (--line-height-100);
   }
   .modal_post p{
     margin: var(--space-0) var(--space-4) var(--space-12) var(--space-4);

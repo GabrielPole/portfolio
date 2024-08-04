@@ -3,14 +3,20 @@ const vm = new Vue({
   el: "#portifolio",
   data: {
     posts: {},
-    post: false
+    post: false,
+    activeIndex: null
   },
   methods: {
-    puxarCursos() {
+    puxarCursos(valor) {
       fetch("https://gabrielpole.github.io/portifolio/api/posts.json")
         .then(r => r.json())
         .then(r => {
-          this.posts = r;
+          if(valor > 0 ){
+            this.posts =  r.filter((item) => item.id == valor);
+            this.activeIndex = valor;
+          }else{
+            this.posts = r;
+          }
         })
         .catch(error => console.error("Ops! Algo deu errado 🙈", error));
     },
@@ -34,6 +40,9 @@ const vm = new Vue({
       document.title = newPost.h1 || "G.Pole";
       const hash = newPost.id ? `#post${newPost.id}` : "";
       history.pushState(null, null, hash);
+    },
+    tab(){
+
     }
   },
   created() {

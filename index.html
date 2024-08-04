@@ -84,12 +84,20 @@
       </div>
       <h2>PORTFÓLIO</h2>
       <div class="boxFolder">
-        <div class="headerTab">
-          <h3 class="abaBranding">Brand</h3>
-          <h3 class="app">App</h3>
-          <h3 class="abaWeb">Web</h3>
-          <h3 class="abaApps active">Todos</h3>
-        </div>
+        <ul class="headerTab">
+          <li :class="{ active: activeIndex === 3 }" @click="puxarCursos(3)">
+            <h3 class="abaBranding">Brand</h3>
+          </li>
+          <li :class="{ active: activeIndex === 2 }" @click="puxarCursos(2)">
+            <h3 class="app">App</h3>
+          </li>
+          <li :class="{ active: activeIndex === 1 }" @click="puxarCursos(1)">
+            <h3 class="abaWeb">Web</h3>
+          </li>
+          <li :class="{ active: activeIndex === 0 }" @click="puxarCursos(0)">
+            <h3 class="abaApps">Todos</h3>
+          </li>
+        </ul>
         <div class="folder">
           <div class="content">
             <div
