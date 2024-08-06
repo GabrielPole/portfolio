@@ -4,7 +4,9 @@ const vm = new Vue({
   data: {
     posts: {},
     post: false,
-    activeIndex: null
+    activeIndex: null,
+    folderColor: ['invory', 'orange', 'purple', 'green'],
+    color: false
   },
   methods: {
     puxarCursos(valor) {
@@ -14,9 +16,11 @@ const vm = new Vue({
           if(valor > 0 ){
             this.posts =  r.filter((item) => item.id == valor);
             this.activeIndex = valor;
+            this.color = this.folderColor[valor];    
           }else{
             this.posts = r;
             this.activeIndex = 0;
+            this.color = 'invory';    
           }
         })
         .catch(error => console.error("Ops! Algo deu errado 🙈", error));
