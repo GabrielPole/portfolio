@@ -1,0 +1,131 @@
+{
+  "id": 2,
+  "h1": "Branding Indsiders",
+  "ano": 2023,
+  "content": [
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Objetivo:"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Criar uma marca que esteja em sintonia com a indústria e trabalhe em conjunto com a tecnologia, oferecendo produtos de prateleira distintos, mas mantendo a uniformidade no padrão de aplicação da marca."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Desafios:"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Manter a uniformidade e a identidade visual entre todos os itens, criando uma marca adaptável a novos produtos."
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "O uso de ícones para representar diferentes condições climáticas (sol, nuvens e chuva) torna-se intuitivo e de fácil compreensão. As cores também são usadas para diferenciar os tipos de clima e destacar as notificações relevantes."
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Discovery & Benchmarking"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Uma vez que já existia um nome levantado e escolhido por votação da empresa. O passo seguinte consistiu em compreender como o mercado se posiciona quando uma empresa possui diversos produtos."
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/img01.png",
+      "info": "font: Discovery — google imagens"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "É perceptível que os produtos originados de uma marca sempre trazem uma parte da identidade visual do logotipo original. Por exemplo, cores, font, formas, isotipos, padrões de nomenclatura, ou simplesmente usar a logo do produto com o logotipo da empresa que o criou."
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Ideação e Protótipos"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Durante três dias, conversamos com os donos da empresa, os interessados e outros membros da equipe. Tivemos tempo para criar, validar, melhorar, ouvir opiniões e descartar ideias."
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/img02.png",
+      "info": "font: Manual de identidade visual — Indsiders"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Resultado"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Após várias sessões de refinamento, chegamos ao resultado final, onde podemos ver a marca principal Indsiders e sua linha de produtos <MY> + <Nome do Produto>."
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/img03.png",
+      "info": "font: Manual de identidade visual — Indsiders"
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/img04.png",
+      "info": "font: Manual de identidade visual — Indsiders"
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Lançamento"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "O lançamento da marca foi planejado para a Mec Show, uma das maiores feiras de tecnologia da indústria brasileira. Sendo assim, é foi necessário um trabalho de aplicação para criar o stand, brindes, camisetas, site, entre outros elementos."
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/img04.png",
+      "info": "font: Autoria Própria"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "info": "Site: indsiders.com | "
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "info": "Até logo..."
+    }
+  ]
+}
