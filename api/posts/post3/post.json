@@ -28,12 +28,6 @@
       "info": "Manter a uniformidade e a identidade visual entre todos os itens, criando uma marca adaptável a novos produtos."
     },
     {
-      "tag": "p",
-      "style": "li",
-      "link": "",
-      "info": "O uso de ícones para representar diferentes condições climáticas (sol, nuvens e chuva) torna-se intuitivo e de fácil compreensão. As cores também são usadas para diferenciar os tipos de clima e destacar as notificações relevantes."
-    },
-    {
       "tag": "h4",
       "style": "",
       "link": "",
@@ -118,9 +112,9 @@
       "info": "font: Autoria Própria"
     },
     {
-      "tag": "a",
-      "style": "",
-      "link": "https://indsiders.com",
+      "tag": "p",
+      "style": "bold",
+      "link": "Site: indsiders.com | Insta: @indsiders",
       "info": "indsiders.com"
     },
     {
