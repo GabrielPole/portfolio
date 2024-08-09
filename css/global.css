@@ -788,7 +788,7 @@ footer img{
   top: var(--space-0);
   left: var(--space-12);
 }
-.modal_post p{
+.modal_post a{
   font-size: var(--font-p-sm);
   color: #00A2A6;
 }
