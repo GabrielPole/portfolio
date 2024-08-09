@@ -73,7 +73,7 @@
         </header>
         <section class="content">
           <div v-for="item in post.content" :key="item.id">
-            <component :is="item.tag" :class="item.style" v-if="item.tag !== 'img'">{{item.info}}</component>
+            <component :is="item.tag" :class="item.style" :href="item.link" v-if="item.tag !== 'img'">{{item.info}}</component>
             <figure v-else-if="item.tag === 'img'">
               <img :src="item.link" :alt="item.info" />
               <figcaption>{{item.info}}</figcaption>
@@ -110,7 +110,7 @@
                 <svg class="bg_button" :class="color" width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L87 0V87C87 59.5263 52.0682 73.8182 31.1287 64.1047C10.1892 54.3912 35.9172 0 0 0Z" />
                   </svg>
-                  
+        
                 <span class="button_open"></span>
                 <div class="title">
                   <h3>{{post.nome}}</h3>

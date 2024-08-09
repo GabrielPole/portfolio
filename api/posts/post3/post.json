@@ -114,13 +114,14 @@
     {
       "tag": "img",
       "style": "",
-      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/img04.png",
+      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/img05.png",
       "info": "font: Autoria Própria"
     },
     {
       "tag": "p",
       "style": "",
-      "info": "Site: indsiders.com | "
+      "link": "https://indsiders.com",
+      "info": "indsiders.com"
     },
     {
       "tag": "p",
