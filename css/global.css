@@ -786,7 +786,7 @@ footer img{
   content: "•";
   position: absolute;
   top: var(--space-0);
-  left: var(--space-24);
+  left: var(--space-12);
 }
 /* =========== Responsividade ===========*/
 @media screen and (max-width: 1270px){
