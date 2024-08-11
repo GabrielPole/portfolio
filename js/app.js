@@ -14,7 +14,7 @@ const vm = new Vue({
         .then(r => r.json())
         .then(r => {
           if(valor > 0 ){
-            this.posts =  r.filter((item) => item.id == valor);
+            this.posts =  r.filter((item) => item.tip == valor);
             this.activeIndex = valor;
             this.color = this.folderColor[valor];    
           }else{

@@ -11,6 +11,7 @@
   {
     "id": 1,
     "nome": "Portfólio",
+    "tip": "1",
     "img":{
       "link": "https://gabrielpole.github.io/portfolio/api/posts/post1/imgcard.png",
       "alt":  "Prévia do portfólio"
@@ -19,6 +20,7 @@
   {
     "id": 2,
     "nome": "Indsiders",
+    "tip": "3",
     "img":{
       "link": "https://gabrielpole.github.io/portfolio/api/posts/post3/imgcard.png",
       "alt":  "Logotipo da indsiders"
@@ -27,6 +29,7 @@
   {
     "id": 4,
     "nome": "Schwarzer Café",
+    "tip": "1",
     "img":{
       "link": "https://gabrielpole.github.io/portfolio/api/posts/post4/imgcard.png",
       "alt":  "Cardápio Digital"
