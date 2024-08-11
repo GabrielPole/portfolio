@@ -1,0 +1,25 @@
+{
+  "id": 4,
+  "h1": "Schwarzer Café",
+  "ano": 2022,
+  "content": [
+    {
+      "tag": "h4",
+      "style": "Schwarzer Café",
+      "link": "",
+      "info": "Objetivo:"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Um cardápio digital para acelerar os pedidos e evitar desperdícios na cozinha, proporcionando uma melhor experiência aos clientes no estabelecimento."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Até logo..."
+    }
+  ]
+}
