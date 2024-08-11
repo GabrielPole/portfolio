@@ -313,7 +313,7 @@ img{
 .introducao .infoTec .uxUi::before{
   background: url(../img/progress02.svg) no-repeat center center;
 }
-/* =========== Portifolio ===========*/
+/* =========== Portfolio ===========*/
 .portfolio{
   grid-template-columns: 1fr;
   gap: var(--gap-0);

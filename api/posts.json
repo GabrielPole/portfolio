@@ -4,7 +4,7 @@
     "nome": "Previsão do Tempo",
     "tip": "1",
     "img":{
-      "link": "https://gabrielpole.github.io/portifolio/api/posts/post2/imgcard.png",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post2/imgcard.png",
       "alt": "Imagem de aplicativo de previsão do tempo"
     }
   },
@@ -12,7 +12,7 @@
     "id": 1,
     "nome": "Portfólio",
     "img":{
-      "link": "https://gabrielpole.github.io/portifolio/api/posts/post1/imgcard.png",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post1/imgcard.png",
       "alt":  "Prévia do portfólio"
     }
   },
@@ -20,7 +20,7 @@
     "id": 3,
     "nome": "Indsiders",
     "img":{
-      "link": "https://gabrielpole.github.io/portifolio/api/posts/post3/imgcard.png",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post3/imgcard.png",
       "alt":  "Logotipo da indsiders"
     }
   }

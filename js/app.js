@@ -1,6 +1,6 @@
 // Só o básico para fazer funcionar ;)
 const vm = new Vue({
-  el: "#portifolio",
+  el: "#portfolio",
   data: {
     posts: {},
     post: false,
@@ -10,7 +10,7 @@ const vm = new Vue({
   },
   methods: {
     puxarCursos(valor) {
-      fetch("https://gabrielpole.github.io/portifolio/api/posts.json")
+      fetch("https://gabrielpole.github.io/portfolio/api/posts.json")
         .then(r => r.json())
         .then(r => {
           if(valor > 0 ){
@@ -26,7 +26,7 @@ const vm = new Vue({
         .catch(error => console.error("Ops! Algo deu errado 🙈", error));
     },
     fetchPost(id) {
-      fetch(`https://gabrielpole.github.io/portifolio/api/posts/post${id}/post.json`)
+      fetch(`https://gabrielpole.github.io/portfolo/api/posts/post${id}/post.json`)
         .then(r => r.json())
         .then(r => {
           this.post = r;
