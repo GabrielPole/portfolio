@@ -26,7 +26,7 @@ const vm = new Vue({
         .catch(error => console.error("Ops! Algo deu errado 🙈", error));
     },
     fetchPost(id) {
-      fetch(`https://gabrielpole.github.io/portfolo/api/posts/post${id}/post.json`)
+      fetch(`https://gabrielpole.github.io/portfolio/api/posts/post${id}/post.json`)
         .then(r => r.json())
         .then(r => {
           this.post = r;
