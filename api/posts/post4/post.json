@@ -4,6 +4,12 @@
   "ano": 2022,
   "content": [
     {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post4/img01.png",
+      "info": "font: Autoria Própria"
+    },
+    {
       "tag": "h4",
       "style": "Schwarzer Café",
       "link": "",
