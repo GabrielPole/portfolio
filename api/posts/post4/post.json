@@ -10,16 +10,16 @@
       "info": "font: Autoria Própria"
     },
     {
-      "tag": "h4",
-      "style": "Schwarzer Café",
+      "tag": "p",
+      "style": "",
       "link": "",
-      "info": "Objetivo:"
+      "info": "Um cardápio digital para acelerar os pedidos e evitar desperdícios na cozinha, proporcionando uma melhor experiência aos clientes no estabelecimento."
     },
     {
       "tag": "p",
       "style": "",
       "link": "",
-      "info": "Um cardápio digital para acelerar os pedidos e evitar desperdícios na cozinha, proporcionando uma melhor experiência aos clientes no estabelecimento."
+      "info": " "
     },
     {
       "tag": "p",
