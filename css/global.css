@@ -329,6 +329,7 @@ img{
   justify-content: end;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .portfolio .headerTab h3{
   color: var(--text-black-he);

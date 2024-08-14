@@ -69,7 +69,6 @@ const nav = document.getElementById('nav');
 
 if (btnMobile && nav) {
   const menuItems = nav.querySelectorAll('ul li');
-
   function toggleMenu(event) {
     if (event.type === 'touchstart') event.preventDefault();
     nav.classList.toggle('active');
@@ -83,24 +82,20 @@ if (btnMobile && nav) {
       document.removeEventListener('click', closeMenuOnClickOutside);
     }
   }
-
   function closeMenuOnClickOutside(event) {
     if (!nav.contains(event.target) && !btnMobile.contains(event.target)) {
       closeMenu();
     }
   }
-
   function closeMenu() {
     nav.classList.remove('active');
     btnMobile.setAttribute('aria-expanded', 'false');
     btnMobile.setAttribute('aria-label', 'Abrir Menu');
     document.removeEventListener('click', closeMenuOnClickOutside);
   }
-
   function handleMenuItemClick() {
     closeMenu();
   }
-
   btnMobile.addEventListener('click', toggleMenu);
   btnMobile.addEventListener('touchstart', toggleMenu);
   menuItems.forEach(item => item.addEventListener('click', handleMenuItemClick));

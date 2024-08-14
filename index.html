@@ -61,14 +61,14 @@
       </div>
     </main>
     <section id="portfolio" class="container portfolio">
-      <div class="modal_post" v-if="post">
+      <div class="modal_post" v-if="post" @keydown.esc="post = false">
         <header>
           <div class="container">
             <div class="header_text">
               <h3>{{post.h1}}</h3>
               <h6>{{post.ano}}</h6>
             </div>
-            <button @click="post = false" class="buttonsm"></button>
+            <button @click="post = false"  class="buttonsm"></button>
           </div>
         </header>
         <section class="content">
@@ -223,7 +223,7 @@
           </ul>
         </div>
         <div class="empresa">
-          <p class="empresa_ano">2021  1a.</p>
+          <p class="empresa_ano">2021  1.5a.</p>
           <h5 class="empresa_titulo">Code n' App</h5>
           <h5 class="empresa_tech">Ux/Ui junior</h5>
           <p class="sm descricao">
@@ -242,29 +242,13 @@
             <li>Design System</li>
             <li>Branding</li>
             <li>Scrum</li>
-          </ul>
-        </div>
-        <div class="empresa">
-          <p class="empresa_ano">2021 3m.</p>
-          <h5 class="empresa_titulo">Code n' App</h5>
-          <h5 class="empresa_tech">Ux/Ui Treinne</h5>
-          <p class="sm descricao">
-            Desenvolver interfaces e fluxos de apresentação, participar de
-            refinamento com o cliente e propor soluções conforme as regras de
-            negócios e dores apresentadas.
-            <button class="ver_mais">...Ver Mais</button>
-          </p>
-          <ul class="empresa_habilidades">
-            <li>Ux/Ui design</li>
-            <li>Mockup & Wireframes</li>
-            <li>Figma</li>
             <li>Adobe XD</li>
           </ul>
         </div>
         <div class="empresa">
           <p class="empresa_ano">2020 8m.</p>
           <h5 class="empresa_titulo">Code n' App</h5>
-          <h5 class="empresa_tech">Estágio Front-End</h5>
+          <h5 class="empresa_tech">Front-End</h5>
           <p class="sm descricao">
             Desenvolvimento de interfaces web, criando e mantendo elementos
             visuais em todo os sistemas.<br />
@@ -281,7 +265,7 @@
         <div class="empresa">
           <p class="empresa_ano">2020 4m.</p>
           <h5 class="empresa_titulo">Pred Engenharia</h5>
-          <h5 class="empresa_tech">Estágio SQL SERVER</h5>
+          <h5 class="empresa_tech">SQL SERVER</h5>
           <p class="sm descricao">
             Manutenção e correção de procedures em banco de dados. Aprimorar e
             sugerir melhorias nos relatórios e processos de manutenção no
@@ -298,7 +282,7 @@
         <div class="empresa">
           <p class="empresa_ano">2019 7m.</p>
           <h5 class="empresa_titulo">ESESP</h5>
-          <h5 class="empresa_tech">Estágio em Infraestrura</h5>
+          <h5 class="empresa_tech">Infraestrura</h5>
           <p class="sm descricao">
             Responsável pela infraestrutura de rede e pela conexão dos
             funcionários ao servidor Windows Server. Realiza a manutenção de
