@@ -4,12 +4,6 @@
   "ano": 2022,
   "content": [
     {
-      "tag": "h4",
-      "style": "",
-      "link": "",
-      "info": "Gapcafé"
-    },
-    {
       "tag": "p",
       "style": "",
       "link": "",
@@ -142,7 +136,7 @@
       "info": "Aumento da eficiência nas operações financeiras realizadas entre produtores."
     },
     {
-      "tag": "link",
+      "tag": "p",
       "style": "li",
       "link": "https://gapcafe.com.br/",
       "info": "GAP CAFÉ"
