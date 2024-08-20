@@ -1,0 +1,151 @@
+{
+  "id": 4,
+  "h1": "GAP CAFÉ",
+  "ano": 2022,
+  "content": [
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Gapcafé"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "A GAP Café vende e armazena café com excelência, oferecendo uma experiência única no mercado. O propósito é fornecer o que há de mais avançado nessa área, assegurando a excelência e a satisfação em cada grão."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Objetivo:"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Criação de um logotipo para atender às necessidades digitais e físicas;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "O aplicativo foi desenvolvido para atender um público-alvo que não tem familiaridade com tecnologia e, em muitos casos, não tem acesso à internet devido à sua localização geográfica;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Construção do sistema web que será responsável pela gestão do aplicativo;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Geração de comprovante de operações eletrônicas e físicas."
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Aplicativo"
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post5/img01.png",
+      "info": "font: App GAP CAFÉ — Desenvolvidor por Code n' App"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Responsividade na Fonte"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Inicialmente, a fonte foi baseada na proporção de 1rem, mas alguns usuários mais experientes tiveram dificuldades para ler as informações na tela."
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "A solução encontrada foi configurar o aplicativo conforme a proporção de fonte do dispositivo. Para isso, foram realizados testes e foram necessárias alterações no aplicativo, como organizar o conteúdo de forma a não ocultar nenhuma informação ou causar quebras no conteúdo."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Feedback"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Como se trata de um aplicativo recente com a proposta de banco com troca por sacas de café, é crucial ter certeza de que está adquirindo ou vendendo. Sempre tivemos esse cuidado durante o desenvolvimento e, mesmo depois, os usuários tiveram algumas dúvidas em algumas operações, como a de encoste. O que resultou numa evolução constante baseada em feedback."
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Sistema Web"
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post5/img02.png",
+      "info": "font: App GAP CAFÉ — Desenvolvidor por Code n' App"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "A versão web foi criada com o objetivo de ser ágil e eficiente na verificação, atualização, registro e preservação das informações sobre transações e usuários."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Resultado"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Desenvolvemos uma plataforma exclusiva para otimizar a gestão interna de estoque da GAP Café, proporcionando ganhos operacionais e redução de custos."
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "180 produtores impactados;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Mais de 200 operações por mês;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Redução significativa de falhas operacionais que dependiam de documentos;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Aumento da eficiência nas operações financeiras realizadas entre produtores."
+    },
+    {
+      "tag": "link",
+      "style": "li",
+      "link": "https://gapcafe.com.br/",
+      "info": "GAP CAFÉ"
+    }
+  ]
+}
