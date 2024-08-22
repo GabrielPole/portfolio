@@ -43,6 +43,15 @@
       "link": "https://gabrielpole.github.io/portfolio/api/posts/post5/imgcard.png",
       "alt":  "Aplicativo de venda e compra de café."
     }
+  },
+  {
+    "id": 6,
+    "nome": "GRP - Consultoria Ambiental",
+    "tip": "3",
+    "img":{
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/imgcard.png",
+      "alt":  "Logotipo de Consultoria Ambiental"
+    }
   }
 ]
   
