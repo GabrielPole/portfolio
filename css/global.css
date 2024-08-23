@@ -302,7 +302,7 @@ img{
   background: url(../img/progress01.svg) no-repeat center center;
 }
 .introducao .infoTec .htmlCss::before{
-  background: url(../img/progress02.svg) no-repeat center center;
+  background: url(../img/progress01.svg) no-repeat center center;
 }
 .introducao .infoTec .javaScript::before{
   background: url(../img/progress03.svg) no-repeat center center;
@@ -311,7 +311,7 @@ img{
   background: url(../img/progress03.svg) no-repeat center center;
 }
 .introducao .infoTec .uxUi::before{
-  background: url(../img/progress02.svg) no-repeat center center;
+  background: url(../img/progress01.svg) no-repeat center center;
 }
 /* =========== Portfolio ===========*/
 .portfolio{
@@ -819,7 +819,7 @@ footer img{
   }
   .introducao .infoTec  h3::before{
     left: var(--space-0);
-    top: var(--space-40);
+    top: var(--space-48);
   }
   #experiencia{
     grid-template-columns: 1fr;

@@ -1,8 +1,16 @@
 <svg width="189" height="21" viewBox="0 0 189 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="187.309" height="2.77495" transform="translate(0.332031 9.4458)" fill="#F9F0E1"/>
-<circle cx="10.4831" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
-<circle cx="52.2615" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
-<circle cx="94.0398" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
-<circle cx="135.818" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
-<circle cx="177.597" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
+<rect width="187.309" height="2.77495" transform="translate(0.783203 9.44604)" fill="#F9F0E1"/>
+<circle cx="10.9343" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
+<circle cx="52.7126" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
+<circle cx="94.491" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
+<circle cx="136.269" cy="10.4831" r="10.4831" fill="#F9F0E1"/>
+<g clip-path="url(#clip0_2_259)">
+<circle cx="178.049" cy="10.4831" r="9.98314" fill="#161616" stroke="#F9F0E1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M178.082 0.611816H177.582C172.059 0.611816 167.582 5.08897 167.582 10.6118V10.6118C167.582 16.1347 172.059 20.6118 177.582 20.6118H178.082V0.611816Z" fill="#F9F0E1"/>
+</g>
+<defs>
+<clipPath id="clip0_2_259">
+<rect width="20.9663" height="20.9663" fill="white" transform="translate(167.565)"/>
+</clipPath>
+</defs>
 </svg>
