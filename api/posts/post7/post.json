@@ -31,6 +31,12 @@
       "tag": "p",
       "style": "bold",
       "link": "",
+      "info": ""
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
       "info": "A empresa Code n' App é a responsável por todo o processo no qual atuei como Product Design do projeto."
     },
     {
@@ -38,6 +44,12 @@
       "style": "",
       "link": "https://www.codenapp.com/pt",
       "info": "www.codenapp.com"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": ""
     },
     {
       "tag": "h4",
@@ -102,7 +114,7 @@
     {
       "tag": "img",
       "style": "",
-      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img01.png",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post7/img01.png",
       "info": "font: Code n'App"
     },
     {
@@ -138,7 +150,7 @@
     {
       "tag": "img",
       "style": "",
-      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img02.png",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post7/img02.png",
       "info": "font: Code n'App"
     },
     {
@@ -152,6 +164,12 @@
       "style": "",
       "link": "https://play.google.com/store/apps/details?id=com.crefaz.meu_crefaz&hl=pt_BR",
       "info": "Playstore"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": ""
     },
     {
       "tag": "h4",
