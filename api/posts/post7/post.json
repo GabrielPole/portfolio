@@ -1,19 +1,194 @@
 {
-  "id": 6,
-  "h1": "GRP - Consultoria Ambiental",
-  "ano": 2022,
+  "id": 7,
+  "h1": "Crefaz - Crédito Consciente",
+  "ano": 2020,
   "content": [
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "A Crefaz é uma instituição financeira que oferece diversas opções de financiamento aos cidadãos brasileiros, tudo com a permissão do Banco Central, de forma totalmente segura."
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Foi uma das pioneiras a oferecer empréstimos com débito em conta de luz, permitindo ao consumidor obter crédito e incluir o valor das parcelas diretamente na conta de energia."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Site da Empresa:"
+    },
+    {
+      "tag": "a",
+      "style": "",
+      "link": "https://site.crefaz.com.br/",
+      "info": "site.crefaz.com.br"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "A empresa Code n' App é a responsável por todo o processo no qual atuei como Product Design do projeto."
+    },
+    {
+      "tag": "a",
+      "style": "",
+      "link": "https://www.codenapp.com/pt",
+      "info": "www.codenapp.com"
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Desafios do Projeto"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Criar um sistema próprio para a empresa, removendo qualquer tipo de dependência de assinaturas de serviços de software;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Migração do sistema conforme as funcionalidades e a ordem de prioridade do backlog, até a completa substituição do sistema;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Com clientes em todo o Brasil e diversas lojas, uma alteração ou impedimento do sistema causaria danos para a organização, até mesmo um fluxo ruim de uso teria impacto nos acessos e facilidade de venda de produtos de crédito;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Processamento de informações e integração com motores de crédito;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Criar um sistema que permita o recebimento de novos produtos e a atualização com melhorias e tecnologias ao longo dos anos;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Atuar em conjunto com a equipe de marketing responsável pela gestão da marca e lançamentos;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Assinatura de contratos e verificação facil por aplicativo;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Gerenciamento de contratos e faturas."
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Sistema Web"
+    },
     {
       "tag": "img",
       "style": "",
       "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img01.png",
-      "info": "Ilustração: Gabriel Pole"
+      "info": "font: Code n'App"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "O sistema web CrefazON foi prototipado e implementado dentro do Figma. Acredito que tenha sido o projeto que começou com o Figma e foi evoluindo conforme as atualizações do Figma, como autolayouts, variantes e outros."
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Foi preciso realizar melhorias ao longo dos anos para aprimorar a criação de protótipos, atualizar o design do sistema e investir em otimização para ter agilidade em validar fluxos e ajustar-se às normas do mercado e às normas do sistema bancário."
+    },
+    {
+      "tag": "a",
+      "style": "",
+      "link": "https://www.youtube.com/watch?v=yvfHfSQy58s",
+      "info": "Marketing"
+    },
+    {
+      "tag": "a",
+      "style": "",
+      "link": "https://www.youtube.com/watch?v=T7hKHQN_HSU",
+      "info": "Tutorial do sistema"
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Aplicativo"
     },
     {
       "tag": "img",
       "style": "",
       "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img02.png",
-      "info": "Ilustração: Gabriel Pole"
+      "info": "font: Code n'App"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": " O aplicativo foi desenvolvido para a criação de assinaturas de contratos e acompanhamento do pagamento dos mesmos. O protótipo inicial foi desenvolvido por uma equipe de terceiros dentro do adobe XD. Posteriormente, realizei a migração do aplicativo para o Figma, visando facilitar a aprovação e implementação de novas melhorias."
+    },
+    {
+      "tag": "a",
+      "style": "",
+      "link": "https://play.google.com/store/apps/details?id=com.crefaz.meu_crefaz&hl=pt_BR",
+      "info": "Playstore"
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Resultados"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "O aplicativo disponível para IOS e Android tem como objetivo auxiliar o cliente enviando documentos para solicitações de crédito 100% online, além de acompanhar e imprimir os boletos das parcelas. O acesso e validação de biometria facial para solicitação de crédito tornam a interação com a Crefaz muito mais segura."
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "O acesso e validação de biometria facial para solicitação de crédito tornam a interação com a Crefaz muito mais segura;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "O sistema web é usado pelos vendedores e analistas de crédito, que integram informações de diversos bancos de dado do mercado para maior segurança e agilidade na concessão de crédito, além de melhorar a experiência do usuário."
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "O aplicativo e o sistema web permitem a integração com os portais das empresas que desejam oferecer crédito aos seus clientes."
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Até logo..."
     }
+   
   ]
 }
