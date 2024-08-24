@@ -1,0 +1,19 @@
+{
+  "id": 6,
+  "h1": "GRP - Consultoria Ambiental",
+  "ano": 2022,
+  "content": [
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img01.png",
+      "info": "Ilustração: Gabriel Pole"
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img02.png",
+      "info": "Ilustração: Gabriel Pole"
+    }
+  ]
+}
