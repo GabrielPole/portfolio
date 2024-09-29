@@ -4,12 +4,6 @@
   "ano": 2023,
   "content": [
     {
-      "tag": "h4",
-      "style": "",
-      "link": "",
-      "info": "Trinovati"
-    },
-    {
       "tag": "p",
       "style": "",
       "link": "",
@@ -84,7 +78,7 @@
     {
       "tag": "img",
       "style": "",
-      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img01.png",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post8/img01.png",
       "info": "font: App Trinovati — Desenvolvidor por Code n' App"
     },
     {
@@ -102,7 +96,7 @@
     {
       "tag": "img",
       "style": "",
-      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img02.png",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post8/img02.png",
       "info": "font: App Trinovati — Desenvolvidor por Code n' App"
     },
     {
