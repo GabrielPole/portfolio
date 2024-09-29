@@ -1,0 +1,163 @@
+{
+  "id": 8,
+  "h1": "Trinovati",
+  "ano": 2023,
+  "content": [
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Trinovati"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "A Trinovati Tecnologia é uma empresa pioneira na inovação e tecnologia para avicultura, se destacando como uma força transformadora no agronegócio. A Trinovati, com o objetivo constante de tornar a indústria mais competitiva, sustentável e inovadora, se dedica a otimizar cada detalhe da produção avícola."
+    },
+    {
+      "tag": "a",
+      "style": "",
+      "link": "https://trinovati.com/inicio",
+      "info": "trinovati.com"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Objetivo:"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Refatorar o layout do aplicativo já existente;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Inserir novas funcionalidades durante a refatoração;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Aplicativo para uso no campo, que pode apresentar problemas durante a conexão com a internet;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Conexão com sensores e dispositivos dentro do campo para atualização de informações com ou sem conexão por meio de bluetooth e Wi-Fi;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Apresentação de feedback com gráficos e alertas sobre animais, sensores e armazenamento;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Atuar como Product Owner, gerenciando o backlog e refinando os itens a serem aprovados em cada sprint;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Atuar como Ux/Ui coletando feedbacks dos clientes e usuários, validando ideias e procedimentos; e"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Verificar a viabilidade com a equipe de desenvolvimento, compreender o impacto de cada senso, tais como tempo de carregamento e tipos de erros, sucesso ou alertas apresentados."
+    },
+    {
+      "tag": "h4",
+      "style": "",
+      "link": "",
+      "info": "Aplicativo"
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img01.png",
+      "info": "font: App Trinovati — Desenvolvidor por Code n' App"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Refatoração e Feedbacks"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "Procurando compreender as dores que já existiam no aplicativo anterior, aplicando padrões modernos de design, além de ter um cuidado especial com os contrastes e informações exibidas na tela para evitar equívocos prejudiciais durante a análise das informações."
+    },
+    {
+      "tag": "img",
+      "style": "",
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post6/img02.png",
+      "info": "font: App Trinovati — Desenvolvidor por Code n' App"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Resultados"
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "A implementação do aplicativo móvel alterou a forma como os avicultores gerenciam suas granjas, utilizando os serviços da Trinovati, permitindo-lhes acompanhar de forma precisa e eficiente os dados operacionais em qualquer lugar. Os benefícios mais relevantes são:"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Houve uma melhoria significativa na habilidade de monitoração e administração, com avicultores agora capazes de acessar informações essenciais e executar ações gerenciais diretamente do galpão ou de qualquer outro lugar;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Aumento na resposta rápida a incidentes, devido aos alertas em tempo real, o que contribui para prevenir perdas e assegurar a saúde e o bem-estar das aves;"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Redução do tempo de ausência e dos gastos relacionados à manutenção dos sistemas de monitoramento; e"
+    },
+    {
+      "tag": "p",
+      "style": "li",
+      "link": "",
+      "info": "Melhoria operacional e produtividade, permitindo aos avicultores otimizar a alimentação e o crescimento das aves."
+    },
+    {
+      "tag": "p",
+      "style": "",
+      "link": "",
+      "info": "A minha atuação como Dono do Produto e Deisgn Ux/Ui foi realizada dentro da Code n` app, que é responsável pela refatoração e melhoria do aplicativo."
+    },
+    {
+      "tag": "a",
+      "style": "",
+      "link": "https://www.codenapp.com/pt",
+      "info": "codenapp.com"
+    },
+    {
+      "tag": "p",
+      "style": "bold",
+      "link": "",
+      "info": "Até logo..."
+    }
+  ]
+}
