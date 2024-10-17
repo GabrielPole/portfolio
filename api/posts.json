@@ -61,6 +61,15 @@
       "link": "https://gabrielpole.github.io/portfolio/api/posts/post7/imgcard.png",
       "alt":  "Crédito consciente"
     }
+  },
+  {
+    "id": 8,
+    "nome": "Trinovati",
+    "tip": "2",
+    "img":{
+      "link": "https://gabrielpole.github.io/portfolio/api/posts/post8/imgcard.png",
+      "alt":  "Aplicativo Trinovati"
+    }
   }
 ]
   
